@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mute.ml//404.html</loc>
+    
+    <lastmod>2016-02-29T06:00:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mute.ml/gusetbook/index.html</loc>
     
     <lastmod>2016-02-28T16:15:42.000Z</lastmod>
@@ -306,13 +313,6 @@
     <loc>http://blog.mute.ml/about/index.html</loc>
     
     <lastmod>2016-02-26T10:00:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mute.ml/404.html</loc>
-    
-    <lastmod>2016-02-24T09:04:15.000Z</lastmod>
     
   </url>
   
