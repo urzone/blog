@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Mute Sounds</title>
   
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://mute.ml/blog/"/>
+  <link href="http://blog.mute.ml/"/>
   <updated>2016-02-28T03:54:07.000Z</updated>
-  <id>http://mute.ml/blog/</id>
+  <id>http://blog.mute.ml/</id>
   
   <author>
     <name>XIAO</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Pyrene molecules in micellar systems during dilution process</title>
-    <link href="http://mute.ml/blog/160223/"/>
-    <id>http://mute.ml/blog/160223/</id>
+    <link href="http://blog.mute.ml/160223/"/>
+    <id>http://blog.mute.ml/160223/</id>
     <published>2016-02-22T16:00:00.000Z</published>
     <updated>2016-02-28T03:54:07.000Z</updated>
     
@@ -73,7 +73,7 @@
 &lt;p&gt;That’s why the trend of the fitted curves was different from the ones reported previously.&lt;/p&gt;
 &lt;h1 id=&quot;A-little-thinking&quot;&gt;&lt;a href=&quot;#A-little-thinking&quot; class=&quot;headerlink&quot; title=&quot;A little thinking:&quot;&gt;&lt;/a&gt;A little thinking:&lt;/h1&gt;&lt;p&gt;Someone told me that if you could find the inflection from your fitting curve and get the accurate results of your experiments, that would be ok. Just forget others. But I still want to know why the strange phenomenon occurred to my fitting curves and wanna know the truth, at least one step closer to the truth. Just a little curious about that :) .&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;a class=&quot;text-center&quot; rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; align=&quot;&quot; style=&quot;border-width:0; border-radius: 0px !important; display: block; margin-left: auto; margin-right: auto&quot; src=&quot;/img/by-nc-nd.svg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://mute.ml/160223/&quot;&gt;This work&lt;/a&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;mailto:navyshaw@yaoo.com&quot; property=&quot;cc:attributionName&quot; rel=&quot;external&quot; target=&quot;_blank&quot;&gt;XIAO&lt;/a&gt; is licensed under a &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License&lt;/a&gt;. If you have a question, comment, or concern about this post, &lt;strong&gt;&lt;a href=&quot;mailto:navyshaw@yaoo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Contact me&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;text-center&quot; rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; align=&quot;&quot; style=&quot;border-width:0; border-radius: 0px !important; display: block; margin-left: auto; margin-right: auto&quot; src=&quot;/img/by-nc-nd.svg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://mute.ml/160223/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This work&lt;/a&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;mailto:navyshaw@yaoo.com&quot; property=&quot;cc:attributionName&quot; rel=&quot;external&quot; target=&quot;_blank&quot;&gt;XIAO&lt;/a&gt; is licensed under a &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License&lt;/a&gt;. If you have a question, comment, or concern about this post, &lt;strong&gt;&lt;a href=&quot;mailto:navyshaw@yaoo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Contact me&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BIBLIOGRAPHY&lt;/strong&gt;&lt;br&gt;&lt;span id=&quot;1&quot;&gt;[1]: Kim, S.H., et al., Thermoresponsive nanostructured polycarbonate block copolymers as biodegradable therapeutic delivery carriers. Biomaterials, 2011. 32(23): p. 5505-5514.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;2&quot;&gt;[2]: Chaudhuri, A., S. Haldar, and A. Chattopadhyay, Organization and dynamics in micellar structural transition monitored by pyrene fluorescence. Biochemical and Biophysical Research Communications, 2009. 390(3): p. 728-732.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;3&quot;&gt;[3]: Cambon, A., et al., Micellisation of triblock copolymers of ethylene oxide and 1,2-butylene oxide: Effect of B-block length. Journal of Colloid and Interface Science, 2011. 361(1): p. 154-158.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;4&quot;&gt;[4]: Xiao, Longxi et al. “Hybrid, Elastomeric Hydrogels Crosslinked by Multifunctional Block Copolymer Micelles.” Soft matter 6.21 (2010): 5293–5297. PMC. Web. 21 Feb. 2016.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;5&quot;&gt;[5]: Piñeiro, Lucas, Mercedes Novo, and Wajih Al-Soufi. “Fluorescence emission of pyrene in surfactant solutions.” Advances in colloid and interface science 215 (2015): 1-12. &lt;/span&gt; &lt;/p&gt;
 </content>
     
@@ -86,27 +86,27 @@
     
     </summary>
     
-      <category term="lab" scheme="http://mute.ml/blog/categories/lab/"/>
+      <category term="lab" scheme="http://blog.mute.ml/categories/lab/"/>
     
     
-      <category term="373 / 384" scheme="http://mute.ml/blog/tags/373-384/"/>
+      <category term="373 / 384" scheme="http://blog.mute.ml/tags/373-384/"/>
     
-      <category term="Boltzmann sigmoid" scheme="http://mute.ml/blog/tags/Boltzmann-sigmoid/"/>
+      <category term="Boltzmann sigmoid" scheme="http://blog.mute.ml/tags/Boltzmann-sigmoid/"/>
     
-      <category term="CMC" scheme="http://mute.ml/blog/tags/CMC/"/>
+      <category term="CMC" scheme="http://blog.mute.ml/tags/CMC/"/>
     
-      <category term="Polarity" scheme="http://mute.ml/blog/tags/Polarity/"/>
+      <category term="Polarity" scheme="http://blog.mute.ml/tags/Polarity/"/>
     
-      <category term="Pyrene" scheme="http://mute.ml/blog/tags/Pyrene/"/>
+      <category term="Pyrene" scheme="http://blog.mute.ml/tags/Pyrene/"/>
     
-      <category term="solubility" scheme="http://mute.ml/blog/tags/solubility/"/>
+      <category term="solubility" scheme="http://blog.mute.ml/tags/solubility/"/>
     
   </entry>
   
   <entry>
     <title>Boltzmann sigmoid and Pyrene fluorescence ratio</title>
-    <link href="http://mute.ml/blog/160220/"/>
-    <id>http://mute.ml/blog/160220/</id>
+    <link href="http://blog.mute.ml/160220/"/>
+    <id>http://blog.mute.ml/160220/</id>
     <published>2016-02-19T16:00:00.000Z</published>
     <updated>2016-02-28T03:54:01.000Z</updated>
     
@@ -135,7 +135,7 @@
 &lt;li&gt;Nonionic surfactants: $CMC_1$ &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0; border-radius: 0px !important; display: block; margin-left: auto; margin-right: auto&quot; src=&quot;/img/by-nc-nd.svg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://mute.ml/160220/&quot;&gt;This work&lt;/a&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;mailto:navyshaw@yaoo.com&quot; property=&quot;cc:attributionName&quot; rel=&quot;external&quot; target=&quot;_blank&quot;&gt;XIAO&lt;/a&gt; is licensed under a &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License&lt;/a&gt;. If you have a question, comment, or concern about this post, &lt;strong&gt;&lt;a href=&quot;mailto:navyshaw@yaoo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Contact me&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0; border-radius: 0px !important; display: block; margin-left: auto; margin-right: auto&quot; src=&quot;/img/by-nc-nd.svg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://mute.ml/160220/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This work&lt;/a&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;mailto:navyshaw@yaoo.com&quot; property=&quot;cc:attributionName&quot; rel=&quot;external&quot; target=&quot;_blank&quot;&gt;XIAO&lt;/a&gt; is licensed under a &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License&lt;/a&gt;. If you have a question, comment, or concern about this post, &lt;strong&gt;&lt;a href=&quot;mailto:navyshaw@yaoo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Contact me&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BIBLIOGRAPHY&lt;/strong&gt;&lt;br&gt;&lt;span id=&quot;1&quot;&gt;[1]: Chaudhuri, A., S. Haldar, and A. Chattopadhyay, Organization and dynamics in micellar structural transition monitored by pyrene fluorescence. Biochemical and Biophysical Research Communications, 2009. 390(3): p. 728-732.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;2&quot;&gt;[2]: Aguiar, J., et al., On the determination of the critical micelle concentration by the pyrene 1 : 3 ratio method. Journal of Colloid and Interface Science, 2003. 258(1): p. 116-122.&lt;/span&gt;  &lt;/p&gt;
 </content>
     
@@ -148,25 +148,25 @@
     
     </summary>
     
-      <category term="lab" scheme="http://mute.ml/blog/categories/lab/"/>
+      <category term="lab" scheme="http://blog.mute.ml/categories/lab/"/>
     
     
-      <category term="373 / 384" scheme="http://mute.ml/blog/tags/373-384/"/>
+      <category term="373 / 384" scheme="http://blog.mute.ml/tags/373-384/"/>
     
-      <category term="Boltzmann" scheme="http://mute.ml/blog/tags/Boltzmann/"/>
+      <category term="Boltzmann" scheme="http://blog.mute.ml/tags/Boltzmann/"/>
     
-      <category term="CMC" scheme="http://mute.ml/blog/tags/CMC/"/>
+      <category term="CMC" scheme="http://blog.mute.ml/tags/CMC/"/>
     
-      <category term="fluorescence" scheme="http://mute.ml/blog/tags/fluorescence/"/>
+      <category term="fluorescence" scheme="http://blog.mute.ml/tags/fluorescence/"/>
     
-      <category term="pyrene" scheme="http://mute.ml/blog/tags/pyrene/"/>
+      <category term="pyrene" scheme="http://blog.mute.ml/tags/pyrene/"/>
     
   </entry>
   
   <entry>
     <title>未成行的送别</title>
-    <link href="http://mute.ml/blog/160215/"/>
-    <id>http://mute.ml/blog/160215/</id>
+    <link href="http://blog.mute.ml/160215/"/>
+    <id>http://blog.mute.ml/160215/</id>
     <published>2016-02-15T16:00:00.000Z</published>
     <updated>2016-02-28T03:53:55.000Z</updated>
     
@@ -186,21 +186,21 @@
     
     </summary>
     
-      <category term="essays" scheme="http://mute.ml/blog/categories/essays/"/>
+      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
     
-      <category term="brother" scheme="http://mute.ml/blog/tags/brother/"/>
+      <category term="brother" scheme="http://blog.mute.ml/tags/brother/"/>
     
-      <category term="goodbye" scheme="http://mute.ml/blog/tags/goodbye/"/>
+      <category term="goodbye" scheme="http://blog.mute.ml/tags/goodbye/"/>
     
-      <category term="sorrow" scheme="http://mute.ml/blog/tags/sorrow/"/>
+      <category term="sorrow" scheme="http://blog.mute.ml/tags/sorrow/"/>
     
   </entry>
   
   <entry>
     <title>Notes in 2016</title>
-    <link href="http://mute.ml/blog/160213/"/>
-    <id>http://mute.ml/blog/160213/</id>
+    <link href="http://blog.mute.ml/160213/"/>
+    <id>http://blog.mute.ml/160213/</id>
     <published>2016-02-12T16:00:00.000Z</published>
     <updated>2016-02-28T03:53:47.000Z</updated>
     
@@ -238,15 +238,15 @@
     
     </summary>
     
-      <category term="notes" scheme="http://mute.ml/blog/categories/notes/"/>
+      <category term="notes" scheme="http://blog.mute.ml/categories/notes/"/>
     
     
   </entry>
   
   <entry>
     <title>2015 年终总结</title>
-    <link href="http://mute.ml/blog/151231/"/>
-    <id>http://mute.ml/blog/151231/</id>
+    <link href="http://blog.mute.ml/151231/"/>
+    <id>http://blog.mute.ml/151231/</id>
     <published>2015-12-30T16:00:00.000Z</published>
     <updated>2016-02-28T04:07:59.000Z</updated>
     
@@ -322,15 +322,15 @@
     
     </summary>
     
-      <category term="records" scheme="http://mute.ml/blog/categories/records/"/>
+      <category term="records" scheme="http://blog.mute.ml/categories/records/"/>
     
     
   </entry>
   
   <entry>
     <title>Notes in 2015</title>
-    <link href="http://mute.ml/blog/151230/"/>
-    <id>http://mute.ml/blog/151230/</id>
+    <link href="http://blog.mute.ml/151230/"/>
+    <id>http://blog.mute.ml/151230/</id>
     <published>2015-12-29T16:00:00.000Z</published>
     <updated>2016-02-28T03:53:38.000Z</updated>
     
@@ -378,15 +378,15 @@
     
     </summary>
     
-      <category term="notes" scheme="http://mute.ml/blog/categories/notes/"/>
+      <category term="notes" scheme="http://blog.mute.ml/categories/notes/"/>
     
     
   </entry>
   
   <entry>
     <title>Music in Place M</title>
-    <link href="http://mute.ml/blog/151130/"/>
-    <id>http://mute.ml/blog/151130/</id>
+    <link href="http://blog.mute.ml/151130/"/>
+    <id>http://blog.mute.ml/151130/</id>
     <published>2015-11-29T16:00:00.000Z</published>
     <updated>2016-02-28T03:53:32.000Z</updated>
     
@@ -441,15 +441,15 @@
     
     </summary>
     
-      <category term="music" scheme="http://mute.ml/blog/categories/music/"/>
+      <category term="music" scheme="http://blog.mute.ml/categories/music/"/>
     
     
   </entry>
   
   <entry>
     <title>无心法师</title>
-    <link href="http://mute.ml/blog/150915/"/>
-    <id>http://mute.ml/blog/150915/</id>
+    <link href="http://blog.mute.ml/150915/"/>
+    <id>http://blog.mute.ml/150915/</id>
     <published>2015-09-14T16:00:00.000Z</published>
     <updated>2016-02-28T03:53:12.000Z</updated>
     
@@ -14451,19 +14451,19 @@
     
     </summary>
     
-      <category term="reading" scheme="http://mute.ml/blog/categories/reading/"/>
+      <category term="reading" scheme="http://blog.mute.ml/categories/reading/"/>
     
     
-      <category term="小说" scheme="http://mute.ml/blog/tags/%E5%B0%8F%E8%AF%B4/"/>
+      <category term="小说" scheme="http://blog.mute.ml/tags/%E5%B0%8F%E8%AF%B4/"/>
     
-      <category term="无心法师" scheme="http://mute.ml/blog/tags/%E6%97%A0%E5%BF%83%E6%B3%95%E5%B8%88/"/>
+      <category term="无心法师" scheme="http://blog.mute.ml/tags/%E6%97%A0%E5%BF%83%E6%B3%95%E5%B8%88/"/>
     
   </entry>
   
   <entry>
     <title>子荒。因子远。</title>
-    <link href="http://mute.ml/blog/150523/"/>
-    <id>http://mute.ml/blog/150523/</id>
+    <link href="http://blog.mute.ml/150523/"/>
+    <id>http://blog.mute.ml/150523/</id>
     <published>2015-05-22T16:00:00.000Z</published>
     <updated>2016-02-28T03:53:05.000Z</updated>
     
@@ -14476,19 +14476,19 @@
     
     </summary>
     
-      <category term="poesia" scheme="http://mute.ml/blog/categories/poesia/"/>
+      <category term="poesia" scheme="http://blog.mute.ml/categories/poesia/"/>
     
     
-      <category term="梦" scheme="http://mute.ml/blog/tags/%E6%A2%A6/"/>
+      <category term="梦" scheme="http://blog.mute.ml/tags/%E6%A2%A6/"/>
     
-      <category term="荒芜" scheme="http://mute.ml/blog/tags/%E8%8D%92%E8%8A%9C/"/>
+      <category term="荒芜" scheme="http://blog.mute.ml/tags/%E8%8D%92%E8%8A%9C/"/>
     
   </entry>
   
   <entry>
     <title>家乡</title>
-    <link href="http://mute.ml/blog/150521/"/>
-    <id>http://mute.ml/blog/150521/</id>
+    <link href="http://blog.mute.ml/150521/"/>
+    <id>http://blog.mute.ml/150521/</id>
     <published>2015-05-20T16:00:00.000Z</published>
     <updated>2016-02-28T03:53:00.000Z</updated>
     
@@ -14509,21 +14509,21 @@
     
     </summary>
     
-      <category term="essays" scheme="http://mute.ml/blog/categories/essays/"/>
+      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
     
-      <category term="Breeze" scheme="http://mute.ml/blog/tags/Breeze/"/>
+      <category term="Breeze" scheme="http://blog.mute.ml/tags/Breeze/"/>
     
-      <category term="Sophie Zelmani" scheme="http://mute.ml/blog/tags/Sophie-Zelmani/"/>
+      <category term="Sophie Zelmani" scheme="http://blog.mute.ml/tags/Sophie-Zelmani/"/>
     
-      <category term="赵雷" scheme="http://mute.ml/blog/tags/%E8%B5%B5%E9%9B%B7/"/>
+      <category term="赵雷" scheme="http://blog.mute.ml/tags/%E8%B5%B5%E9%9B%B7/"/>
     
   </entry>
   
   <entry>
     <title>鬼梦</title>
-    <link href="http://mute.ml/blog/150514/"/>
-    <id>http://mute.ml/blog/150514/</id>
+    <link href="http://blog.mute.ml/150514/"/>
+    <id>http://blog.mute.ml/150514/</id>
     <published>2015-05-13T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:55.000Z</updated>
     
@@ -14543,21 +14543,21 @@
     
     </summary>
     
-      <category term="poesia" scheme="http://mute.ml/blog/categories/poesia/"/>
+      <category term="poesia" scheme="http://blog.mute.ml/categories/poesia/"/>
     
     
-      <category term="女孩" scheme="http://mute.ml/blog/tags/%E5%A5%B3%E5%AD%A9/"/>
+      <category term="女孩" scheme="http://blog.mute.ml/tags/%E5%A5%B3%E5%AD%A9/"/>
     
-      <category term="彩色" scheme="http://mute.ml/blog/tags/%E5%BD%A9%E8%89%B2/"/>
+      <category term="彩色" scheme="http://blog.mute.ml/tags/%E5%BD%A9%E8%89%B2/"/>
     
-      <category term="梦" scheme="http://mute.ml/blog/tags/%E6%A2%A6/"/>
+      <category term="梦" scheme="http://blog.mute.ml/tags/%E6%A2%A6/"/>
     
   </entry>
   
   <entry>
     <title>纪念白服的青春，可是英雄在塞外</title>
-    <link href="http://mute.ml/blog/141231/"/>
-    <id>http://mute.ml/blog/141231/</id>
+    <link href="http://blog.mute.ml/141231/"/>
+    <id>http://blog.mute.ml/141231/</id>
     <published>2014-12-30T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:51.000Z</updated>
     
@@ -14580,15 +14580,15 @@
     
     </summary>
     
-      <category term="essays" scheme="http://mute.ml/blog/categories/essays/"/>
+      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
     
   </entry>
   
   <entry>
     <title>想你的时候，我在梦里</title>
-    <link href="http://mute.ml/blog/140216/"/>
-    <id>http://mute.ml/blog/140216/</id>
+    <link href="http://blog.mute.ml/140216/"/>
+    <id>http://blog.mute.ml/140216/</id>
     <published>2014-02-15T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:46.000Z</updated>
     
@@ -14608,21 +14608,21 @@
     
     </summary>
     
-      <category term="poesia" scheme="http://mute.ml/blog/categories/poesia/"/>
+      <category term="poesia" scheme="http://blog.mute.ml/categories/poesia/"/>
     
     
-      <category term="梦" scheme="http://mute.ml/blog/tags/%E6%A2%A6/"/>
+      <category term="梦" scheme="http://blog.mute.ml/tags/%E6%A2%A6/"/>
     
-      <category term="母亲" scheme="http://mute.ml/blog/tags/%E6%AF%8D%E4%BA%B2/"/>
+      <category term="母亲" scheme="http://blog.mute.ml/tags/%E6%AF%8D%E4%BA%B2/"/>
     
-      <category term="虚幻" scheme="http://mute.ml/blog/tags/%E8%99%9A%E5%B9%BB/"/>
+      <category term="虚幻" scheme="http://blog.mute.ml/tags/%E8%99%9A%E5%B9%BB/"/>
     
   </entry>
   
   <entry>
     <title>2013 年终总结</title>
-    <link href="http://mute.ml/blog/140130/"/>
-    <id>http://mute.ml/blog/140130/</id>
+    <link href="http://blog.mute.ml/140130/"/>
+    <id>http://blog.mute.ml/140130/</id>
     <published>2014-01-29T16:00:00.000Z</published>
     <updated>2016-02-28T04:07:27.000Z</updated>
     
@@ -14682,15 +14682,15 @@
     
     </summary>
     
-      <category term="records" scheme="http://mute.ml/blog/categories/records/"/>
+      <category term="records" scheme="http://blog.mute.ml/categories/records/"/>
     
     
   </entry>
   
   <entry>
     <title>人不同心 岂能同行？</title>
-    <link href="http://mute.ml/blog/130822/"/>
-    <id>http://mute.ml/blog/130822/</id>
+    <link href="http://blog.mute.ml/130822/"/>
+    <id>http://blog.mute.ml/130822/</id>
     <published>2013-08-21T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:29.000Z</updated>
     
@@ -14722,19 +14722,19 @@
     
     </summary>
     
-      <category term="essays" scheme="http://mute.ml/blog/categories/essays/"/>
+      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
     
-      <category term="宋美龄" scheme="http://mute.ml/blog/tags/%E5%AE%8B%E7%BE%8E%E9%BE%84/"/>
+      <category term="宋美龄" scheme="http://blog.mute.ml/tags/%E5%AE%8B%E7%BE%8E%E9%BE%84/"/>
     
-      <category term="蒋介石" scheme="http://mute.ml/blog/tags/%E8%92%8B%E4%BB%8B%E7%9F%B3/"/>
+      <category term="蒋介石" scheme="http://blog.mute.ml/tags/%E8%92%8B%E4%BB%8B%E7%9F%B3/"/>
     
   </entry>
   
   <entry>
     <title>如烟花般寂寞 - 泡沫人</title>
-    <link href="http://mute.ml/blog/130817/"/>
-    <id>http://mute.ml/blog/130817/</id>
+    <link href="http://blog.mute.ml/130817/"/>
+    <id>http://blog.mute.ml/130817/</id>
     <published>2013-08-16T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:24.000Z</updated>
     
@@ -14752,19 +14752,19 @@
     
     </summary>
     
-      <category term="essays" scheme="http://mute.ml/blog/categories/essays/"/>
+      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
     
-      <category term="烟花" scheme="http://mute.ml/blog/tags/%E7%83%9F%E8%8A%B1/"/>
+      <category term="烟花" scheme="http://blog.mute.ml/tags/%E7%83%9F%E8%8A%B1/"/>
     
-      <category term="记忆" scheme="http://mute.ml/blog/tags/%E8%AE%B0%E5%BF%86/"/>
+      <category term="记忆" scheme="http://blog.mute.ml/tags/%E8%AE%B0%E5%BF%86/"/>
     
   </entry>
   
   <entry>
     <title>Pirate Bay in science world</title>
-    <link href="http://mute.ml/blog/130221/"/>
-    <id>http://mute.ml/blog/130221/</id>
+    <link href="http://blog.mute.ml/130221/"/>
+    <id>http://blog.mute.ml/130221/</id>
     <published>2013-02-21T12:07:21.000Z</published>
     <updated>2016-02-28T03:52:19.000Z</updated>
     
@@ -14802,25 +14802,25 @@
     
     </summary>
     
-      <category term="lab" scheme="http://mute.ml/blog/categories/lab/"/>
+      <category term="lab" scheme="http://blog.mute.ml/categories/lab/"/>
     
     
-      <category term="Download" scheme="http://mute.ml/blog/tags/Download/"/>
+      <category term="Download" scheme="http://blog.mute.ml/tags/Download/"/>
     
-      <category term="Pirate Bay" scheme="http://mute.ml/blog/tags/Pirate-Bay/"/>
+      <category term="Pirate Bay" scheme="http://blog.mute.ml/tags/Pirate-Bay/"/>
     
-      <category term="Sci-Hub" scheme="http://mute.ml/blog/tags/Sci-Hub/"/>
+      <category term="Sci-Hub" scheme="http://blog.mute.ml/tags/Sci-Hub/"/>
     
-      <category term="Science" scheme="http://mute.ml/blog/tags/Science/"/>
+      <category term="Science" scheme="http://blog.mute.ml/tags/Science/"/>
     
-      <category term="paper" scheme="http://mute.ml/blog/tags/paper/"/>
+      <category term="paper" scheme="http://blog.mute.ml/tags/paper/"/>
     
   </entry>
   
   <entry>
     <title>亲爱的 不要悲伤</title>
-    <link href="http://mute.ml/blog/121018/"/>
-    <id>http://mute.ml/blog/121018/</id>
+    <link href="http://blog.mute.ml/121018/"/>
+    <id>http://blog.mute.ml/121018/</id>
     <published>2012-10-17T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:10.000Z</updated>
     
@@ -14841,21 +14841,21 @@
     
     </summary>
     
-      <category term="poesia" scheme="http://mute.ml/blog/categories/poesia/"/>
+      <category term="poesia" scheme="http://blog.mute.ml/categories/poesia/"/>
     
     
-      <category term="悲伤" scheme="http://mute.ml/blog/tags/%E6%82%B2%E4%BC%A4/"/>
+      <category term="悲伤" scheme="http://blog.mute.ml/tags/%E6%82%B2%E4%BC%A4/"/>
     
-      <category term="爱" scheme="http://mute.ml/blog/tags/%E7%88%B1/"/>
+      <category term="爱" scheme="http://blog.mute.ml/tags/%E7%88%B1/"/>
     
-      <category term="美好" scheme="http://mute.ml/blog/tags/%E7%BE%8E%E5%A5%BD/"/>
+      <category term="美好" scheme="http://blog.mute.ml/tags/%E7%BE%8E%E5%A5%BD/"/>
     
   </entry>
   
   <entry>
     <title>我爱你，整整一个曾经</title>
-    <link href="http://mute.ml/blog/120506/"/>
-    <id>http://mute.ml/blog/120506/</id>
+    <link href="http://blog.mute.ml/120506/"/>
+    <id>http://blog.mute.ml/120506/</id>
     <published>2012-05-05T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:05.000Z</updated>
     
@@ -14879,15 +14879,15 @@
     
     </summary>
     
-      <category term="essays" scheme="http://mute.ml/blog/categories/essays/"/>
+      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
     
   </entry>
   
   <entry>
     <title>南京一二，樱花园下。</title>
-    <link href="http://mute.ml/blog/120404/"/>
-    <id>http://mute.ml/blog/120404/</id>
+    <link href="http://blog.mute.ml/120404/"/>
+    <id>http://blog.mute.ml/120404/</id>
     <published>2012-04-03T16:00:00.000Z</published>
     <updated>2016-02-28T03:52:01.000Z</updated>
     
@@ -14913,12 +14913,12 @@
     
     </summary>
     
-      <category term="essays" scheme="http://mute.ml/blog/categories/essays/"/>
+      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
     
-      <category term="南京" scheme="http://mute.ml/blog/tags/%E5%8D%97%E4%BA%AC/"/>
+      <category term="南京" scheme="http://blog.mute.ml/tags/%E5%8D%97%E4%BA%AC/"/>
     
-      <category term="樱花" scheme="http://mute.ml/blog/tags/%E6%A8%B1%E8%8A%B1/"/>
+      <category term="樱花" scheme="http://blog.mute.ml/tags/%E6%A8%B1%E8%8A%B1/"/>
     
   </entry>
   
