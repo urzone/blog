@@ -2,13 +2,15 @@
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /categories/
+
 
 Disallow: /vendors/
+Disallow: /img/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://mute.ml/sitemap.xml
-Sitemap: http://mute.ml/baidusitemap.xml
+Sitemap: http://blog.mute.ml/sitemap.xml
