@@ -13,4 +13,4 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://blog.mute.ml/sitemap.xml
+Sitemap: http://mute.ml/sitemap.xml
