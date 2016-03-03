@@ -965,7 +965,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #037090;
+  background: #ffa473;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -2317,6 +2317,7 @@ a.fancybox-item.fancybox-close {
 .posts-expand .post-title {
 /* Posts 标题的重量*/
   font-weight: 600;
+  letter-spacing: -0.5px;
 }
 h1,
 h2,
