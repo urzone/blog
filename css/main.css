@@ -188,7 +188,7 @@ body {
   font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 13px;
   line-height: 2;
-  color: $black;
+  color: #222;
   background: #fff;
 }
 @media (max-width: 767px) {
@@ -965,7 +965,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #79ff91;
+  background: #f4e8ff;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -1185,7 +1185,7 @@ body {
   display: block;
   width: 22px;
   height: 2px;
-  background: $black;
+  background: #222;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
