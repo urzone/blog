@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mute.ml/"/>
-  <updated>2016-02-28T03:54:07.000Z</updated>
+  <updated>2016-03-06T08:59:58.000Z</updated>
   <id>http://blog.mute.ml/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nanomicelle formation</title>
+    <link href="http://blog.mute.ml/160306/"/>
+    <id>http://blog.mute.ml/160306/</id>
+    <published>2016-03-06T07:00:39.000Z</published>
+    <updated>2016-03-06T08:59:58.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Coumarin 6 is a small molecular fluorescent dye, which has been frequently used for the traceability of excipients in vitro. And here, it was used as a hydrophobic model probe to explore the formation of micelles indirectly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/20160306.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Figure 1. The emission fluorescence intensity of coumarin 6 in water.&lt;/p&gt; 
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;Coumarin-in-water&quot;&gt;&lt;a href=&quot;#Coumarin-in-water&quot; class=&quot;headerlink&quot; title=&quot;Coumarin in water&quot;&gt;&lt;/a&gt;Coumarin in water&lt;/h1&gt;&lt;p&gt;The emission fluorescent intensity of coumarin 6 in pure water, which was excited by the light with a maximum excitation wavelength at 441.7 nm, was exhibited in Figure 1. Negligible fluorescence was recorded by the spectrometer from 450 nm to 850nm, while only a small specific emission peak at wavelength of 883.6 nm was observed, which might be emitted by few parts of coumarin 6 molecules which were aggregated in some unique forms in water because of their extremely poor water- solubility.&lt;/p&gt;
+&lt;h1 id=&quot;Coumarin-in-acetone-and-micelles&quot;&gt;&lt;a href=&quot;#Coumarin-in-acetone-and-micelles&quot; class=&quot;headerlink&quot; title=&quot;Coumarin in acetone and micelles&quot;&gt;&lt;/a&gt;Coumarin in acetone and micelles&lt;/h1&gt;&lt;p&gt;As shown in Figure 2, a strong emission peak of coumarin 6 in acetone (20 μg/mL) at wavelength of 508.3 nm was recorded. The dramatic increase of emission fluorescent intensity might correspond to the increase of coumarin 6 solubility in organic solvent. What’s more, there was no emission peak detected at wavelength of 883.6 nm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/20160306_2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Figure 2. The emission fluorescence of coumarin 6 (20 μg/mL) in acetone and nanomicelles.&lt;/p&gt;
+
+&lt;h1 id=&quot;Fluorescence-quenching&quot;&gt;&lt;a href=&quot;#Fluorescence-quenching&quot; class=&quot;headerlink&quot; title=&quot;Fluorescence quenching&quot;&gt;&lt;/a&gt;Fluorescence quenching&lt;/h1&gt;&lt;p&gt;Figure 3 exhibited the emission fluorescence quenching process after a twice volume of pure water was added into 1 mL of acetone solution of coumarin 6 (10 μg/mL). After the addition of pure water into coumarin 6 acetone solution, the fluorescence intensity of coumarin 6 was detected immediately, which was decreased from some 450 to about only 50 within about 20 minutes. This might be caused by the hydrogen bound formed between water molecules and coumarin 6, just as previously reported on the quenching process between coumarin 102 and phenol molecules&lt;a href=&quot;#1&quot;&gt;[1]&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/20160306_3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Figure 3. Fluorescence quenching process of coumarin 6 in acetone caused by the addition of water.&lt;/p&gt;
+
+&lt;p&gt;The solubility of coumarin in water was too low, the addition of water might also cause the decrease of emission fluoresce. Therefore the water added in the experiment was replaced by alcohol, the fluorescence quenching process could also be observed. Alcohol contained hydroxy groups, but the solubility of coumarin in alcohol was much higher that in water.&lt;/p&gt;
+&lt;h1 id=&quot;Nanomicelle-formation&quot;&gt;&lt;a href=&quot;#Nanomicelle-formation&quot; class=&quot;headerlink&quot; title=&quot;Nanomicelle formation&quot;&gt;&lt;/a&gt;Nanomicelle formation&lt;/h1&gt;&lt;p&gt;The emission fluorescence of coumarin 6 loaded nanomicelles were also detected. As shown in Figure 2, an emission peak at 492.3 nm was observed, which was much larger than that of coumarin 6 in pure water, indicating that the solubility of coumarin 6 in aqueous solution increased with the help of the amphiphilic copolymers. What’s more, this emission peak was shifted to a shorter wavelength (16 nm blue shift) in comparison with that of coumarin 6 in acetone. According to the previous study&lt;a href=&quot;#2&quot;&gt;[2]&lt;/a&gt;, this emission band shift verified that the coumarin 6 molecules in the aqueous solution were located in an apolar microenvironment. The emission fluorescence of coumarin 6 loaded nanomicelles, which were stored at room temperature, could still be detected after one week with almost the same intensity. Besides, no emission fluorescence of the amphiphilic polymers was observed. These results demonstrated that the amphiphilic polymers in water can form some sealed shapes with hydrophobic inner parts, inside which coumarin 6 could be entrapped to prevent the fluorescence quenching caused by interaction with water molecules as well as to increase its solubility in water.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/20160306_4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Figure 4.  SEM image of the formed particles.&lt;/p&gt;
+
+&lt;p&gt;Actually, the concrete shapes of the sealed polymeric particles were characterised by SEM, which was exhibited in Figure 3.2.4_4. Some spherical shapes with a diameter size of about 100 nm were observed from the SEM image.&lt;/p&gt;
+&lt;h1 id=&quot;A-little-more-thinking&quot;&gt;&lt;a href=&quot;#A-little-more-thinking&quot; class=&quot;headerlink&quot; title=&quot;A little more thinking&quot;&gt;&lt;/a&gt;A little more thinking&lt;/h1&gt;&lt;p&gt;Besides, a small specific emission peak at around 883 nm on the fluorescence spectrum of coumarin 6 loaded nanomicelles was observed in Figure 2, which was just as same as that of coumarin 6 dissolved in pure water. This indicated that not all of the coumarin 6 molecules were entrapped inside the polymeric sealed shapes, but parts in water. The emission fluorescent intensity of coumarin 6 loaded nanomicelles was much lower than that of coumarin 6 in acetone with the same concentration. This might be caused by the loss of coumarin 6 during the preparation of micellar suspensions and the interaction of coumarin 6 with water molecules.&lt;/p&gt;
+&lt;p&gt;In addition, according to the related literature&lt;a href=&quot;#3&quot;&gt;[3]&lt;/a&gt;, for generating polymersomes in aqueous solution, polymers should possess a ratio of hydrophilic to total mass at around 35% ± 10%. Therefore, all the results above demonstrated that polymeric nanomicelles could be obtained using the synthesised amphiphilic block copolymers through the desolvation technique.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a class=&quot;text-center&quot; rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; align=&quot;&quot; style=&quot;border-width:0; border-radius: 0px !important; display: block; margin-left: auto; margin-right: auto&quot; src=&quot;/img/by-nc-nd.svg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://mute.ml/160223/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This work&lt;/a&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;mailto:navyshaw@yaoo.com&quot; property=&quot;cc:attributionName&quot; rel=&quot;external&quot; target=&quot;_blank&quot;&gt;XIAO&lt;/a&gt; is licensed under a &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License&lt;/a&gt;. If you have a question, comment, or concern about this post, &lt;strong&gt;&lt;a href=&quot;mailto:navyshaw@yaoo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Contact me&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BIBLIOGRAPHY&lt;/strong&gt;&lt;br&gt;&lt;span id=&quot;1&quot;&gt;[1]: Barman, N., D. Singha, and K. Sahu, Fluorescence Quenching of Hydrogen-Bonded Coumarin 102-Phenol Complex: Effect of Excited-State Hydrogen Bonding Strength. Journal of Physical Chemistry A, 2013. 117(19): p. 3945-3953.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;2&quot;&gt;[2]: Raikar, U.S., et al., Solvent effects on the absorption and fluorescence spectra of coumarins 6 and 7 molecules: Determination of ground and excited state dipole moment. Spectrochimica Acta Part a-Molecular and Biomolecular Spectroscopy, 2006. 65(3-4): p. 673-677.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;3&quot;&gt;[3]: Discher, D.E. and F. Ahmed, Polymersomes. Annu Rev Biomed Eng, 2006. 8: p. 323-41.&lt;/span&gt;   &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Coumarin 6 is a small molecular fluorescent dye, which has been frequently used for the traceability of excipients in vitro. And here, it was used as a hydrophobic model probe to explore the formation of micelles indirectly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/20160306.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Figure 1. The emission fluorescence intensity of coumarin 6 in water.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="lab" scheme="http://blog.mute.ml/categories/lab/"/>
+    
+    
+      <category term="Coumarin 6" scheme="http://blog.mute.ml/tags/Coumarin-6/"/>
+    
+      <category term="Fluorescence" scheme="http://blog.mute.ml/tags/Fluorescence/"/>
+    
+      <category term="Formation" scheme="http://blog.mute.ml/tags/Formation/"/>
+    
+      <category term="Nanomicelle" scheme="http://blog.mute.ml/tags/Nanomicelle/"/>
+    
+      <category term="SEM" scheme="http://blog.mute.ml/tags/SEM/"/>
+    
+  </entry>
   
   <entry>
     <title>Pyrene molecules in micellar systems during dilution process</title>
@@ -14875,44 +14932,6 @@
     
       <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>南京一二，樱花园下。</title>
-    <link href="http://blog.mute.ml/120404/"/>
-    <id>http://blog.mute.ml/120404/</id>
-    <published>2012-04-03T16:00:00.000Z</published>
-    <updated>2016-02-28T03:52:01.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/img/20120404.jpg&quot; alt=&quot;樱花&quot;&gt;&lt;br&gt;一二年，春，南京。&lt;br&gt;玄武门里，樱花园下。&lt;br&gt;阳光。&lt;br&gt;微风。  &lt;/p&gt;
-&lt;p&gt;满园雪白的樱花。&lt;br&gt; 一人。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;走在湖心起伏的石桥上，逆着光欣赏，樱花散落下的花瓣，在微风里翩跹起舞。&lt;/p&gt;
-&lt;p&gt;望着远处穿行的人流，一对一对的欢笑，心里却泛起几丝莫名的忧伤，是因为思念吗？脑子里突然冒出一句话：我们不过都是一些凡夫俗子，做着凡人都做的俗事，并从中寻找属于自己的快乐。&lt;/p&gt;
-&lt;p&gt;想起去年今日，依旧是自己一人，站在这里，望着远方，已经忘记了那时的自己，心里在想着些什么了。&lt;/p&gt;
-&lt;p&gt;站在偌大的一株樱花树下，草地上铺满了白白的花瓣，风儿乍起，花瓣跟着风儿绕起弯儿来。仰起头，想要仔仔细细地看看这些即将随风凋落的花儿，想要记住此刻的她们，在这样的地点，这样的时刻，给人间平添的一些欢乐，想要记住她们美丽的容颜，刻在心间，永不遗忘！望着这美丽的容颜，心里默默地叨念着她们的名字：樱……花……&lt;/p&gt;
-&lt;p&gt;樱花镂空的天空，一片湛蓝碎成了星星点点，就像身旁走过的情侣，欢乐的笑声，撒落身后，碎了一地。&lt;/p&gt;
-&lt;p&gt;樱花，其实我是早就见过的。外婆家的大院里，有好大一颗樱花树。夏天里，还能结出好多好多的果子来。&lt;/p&gt;
-&lt;p&gt;我对自己笑笑，暗自地说：有些事情，从不提起，其实并不代表忘记。&lt;/p&gt;
-&lt;p&gt;就像现在我的心里，总也能想起的你。&lt;/p&gt;
-&lt;p&gt;回望我来是的路，一路的风景，一路的风雨。&lt;/p&gt;
-&lt;p&gt;而此刻此地，我即将作别的她们，依旧在这柔柔的春风里，体会着这日光些许的暖意。&lt;/p&gt;
-&lt;p&gt;我转身回望：“别了，此刻的你！”&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/img/20120404.jpg&quot; alt=&quot;樱花&quot;&gt;&lt;br&gt;一二年，春，南京。&lt;br&gt;玄武门里，樱花园下。&lt;br&gt;阳光。&lt;br&gt;微风。  &lt;/p&gt;
-&lt;p&gt;满园雪白的樱花。&lt;br&gt; 一人。
-    
-    </summary>
-    
-      <category term="essays" scheme="http://blog.mute.ml/categories/essays/"/>
-    
-    
-      <category term="南京" scheme="http://blog.mute.ml/tags/%E5%8D%97%E4%BA%AC/"/>
-    
-      <category term="樱花" scheme="http://blog.mute.ml/tags/%E6%A8%B1%E8%8A%B1/"/>
     
   </entry>
   
