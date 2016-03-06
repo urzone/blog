@@ -965,7 +965,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2420ff;
+  background: #e7008a;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -2292,8 +2292,7 @@ a.fancybox-item.fancybox-close {
   column-gap: 30px;
   padding: 0 10px;
   margin: 3em 3% 5em 3%;
-  font-family: 'cnfont' !important;
-  font-size: 22px;
+  font-size: 13px;
 }
 .poemcolumns3 {
   columns: 180px;
@@ -2303,6 +2302,7 @@ a.fancybox-item.fancybox-close {
 }
 .poemfont {
   font-family: 'cnfont' !important;
+  font-size: 22px;
 }
 #menu.menu.menu-left {
 /* 调整菜单栏宽度以便显示正常 */
