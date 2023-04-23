@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Warp&#43; 与 WireGuard - XiaO | 缄默之语</title>
+    <meta property="og:title" content="Warp&#43; 与 WireGuard - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="使用 homebrew 安装 wgcf
+[&amp;hellip;] brew install wgcf wgcf 的操作说明
+wgcf --help wgcf is a utility for Cloudflare Warp that allows you to create and manage accounts, assign license keys, and generate WireGuard &amp;hellip;">
+      <meta property="og:description" content="使用 homebrew 安装 wgcf
+[&amp;hellip;] brew install wgcf wgcf 的操作说明
+wgcf --help wgcf is a utility for Cloudflare Warp that allows you to create and manage accounts, assign license keys, and generate WireGuard &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Warp&#43; 与 WireGuard</h1>
+
+
+<h3>XiaO / 
+2023-04-19</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h3 id="获取-cloudflare-warp-24-pb-流量">获取 Cloudflare Warp+ 24 PB 流量</h3>
+<ul>
+<li>打开 <a href="https://t.me/generatewarpplusbot">Wrap+ Bot</a>.</li>
+<li>去 Telegram，按要求输入命令进行获取 Cloudflare Warp+ key.</li>
+</ul>
+<h3 id="通过-wgcfhttpsgithubcomvirb3wgcf-获取-cloudflare-warp-配置">通过 <a href="https://github.com/ViRb3/wgcf">wgcf</a> 获取 Cloudflare Warp+ 配置</h3>
+<p>使用 <a href="https://brew.sh">homebrew</a> 安装 wgcf</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install wgcf
+</span></span></code></pre></div><p>wgcf 的操作说明</p>
+<pre tabindex="0"><code>wgcf --help
+wgcf is a utility for Cloudflare Warp that allows you to create and manage accounts, assign license keys, and generate WireGuard profiles. Made by Victor (@ViRb3). Project website: https://github.com/ViRb3/wgcf
+
+Usage:
+  wgcf [flags]
+  wgcf [command]
+
+Available Commands:
+  completion  Generate the autocompletion script for the specified shell
+  generate    Generates a WireGuard profile from the current Cloudflare Warp account
+  help        Help about any command
+  register    Registers a new Cloudflare Warp device and creates a new account, preparing it for connection
+  status      Prints the status of the current Cloudflare Warp device
+  trace       Prints trace information about the current internet connection
+  update      Updates the current Cloudflare Warp account, preparing it for connection
+
+Flags:
+      --config string   Configuration file (default &#34;wgcf-account.toml&#34;)
+  -h, --help            help for wgcf
+
+Use &#34;wgcf [command] --help&#34; for more information about a command.
+</code></pre><p>注册 Cloudflare Warp 帐号：</p>
+<pre tabindex="0"><code>wgcf register
+</code></pre><p>此时，在终端的当前文件夹中会生成一个 <code>wgcf-account.toml</code> 文件</p>
+<pre tabindex="0"><code>access_token = &#39;ab629343-ac46-abdc-78di-6f7e3a332caf&#39;
+device_id = &#39;cea7b53f-bd00-40vd-aiod-3e950bf24wer&#39;
+license_key = &#39;2e5sT91G-2I0njiKj-4UE23458&#39;
+private_key = &#39;GBIsrwccea7b53ffnyawbR3/Mr37PW8MPINaRuSxGc=&#39;
+</code></pre><p>修改该 license_key 的值为前面获取的 Warp+ key，然后更新配置</p>
+<pre tabindex="0"><code>wgcf update
+</code></pre><p>生成配置文件：</p>
+<pre tabindex="0"><code>wgcf generate
+</code></pre><p>此时，在终端的当前文件夹中会生成一个 <code>wgcf-profile.conf</code> 文件，该文件含有所有魔法口诀。</p>
+<h3 id="对机器使用魔法">对机器使用魔法</h3>
+<p><a href="https://www.wireguard.com/install/">下载不同平台</a>的支持 wireguard 协议的软件，导入上述文件即可进入魔法世界。</p>
+<p>本老旧破机器无法使用现成的软件，只能配置 <a href="https://github.com/WireGuard/wireguard-tools">wireguard-tools</a>，</p>
+<pre tabindex="0"><code>brew install wireguard-tools
+</code></pre><p>将前述 <code>wgcf-profile.conf</code> 文件复制到
+<code>/usr/local/etc/wireguard/</code> 文件夹中。</p>
+<pre tabindex="0"><code>sudo wg-quick up /usr/local/etc/wireguard/wgcf-profile.conf #启用
+sudo wg #查看
+sudo wg-quick down /usr/local/etc/wireguard/wgcf-profile.conf #停止
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2023-04-18/preclinical-research/">Preclinical research</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2023-04-18\/preclinical-research\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2022</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

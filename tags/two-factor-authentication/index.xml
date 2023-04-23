@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>two-factor authentication on XiaO | 缄默之语</title>
+    <link>https://blog.urz.one/tags/two-factor-authentication/</link>
+    <description>Recent content in two-factor authentication on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sat, 23 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/two-factor-authentication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>双因素认证</title>
+      <link>https://blog.urz.one/draft/two-factor-authentication/</link>
+      <pubDate>Sat, 23 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/draft/two-factor-authentication/</guid>
+      <description>认证（authentication）是对用户身份的确认。密码，作为最寻常的单一因素认证，其实很不安全。一则容易泄漏，二则密码太多，如果相同则</description>
+    </item>
+    
+  </channel>
+</rss>

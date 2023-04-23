@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTP_HOST} ^mute.ml$ [OR]
-  RewriteCond %{HTTP_HOST} ^www.mute.ml$
-  RewriteRule (.*)$ http:/urz.one/$1 [R=301,L]
-</IfModule>
