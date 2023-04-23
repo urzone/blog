@@ -113,9 +113,9 @@ pre .nohighlight {
   background: transparent;
 }
 pre code {
-  background: none;
-  color: #333;
-  border: none;
+/*  background: none;*/
+  color: #000;
+/*  border: none;*/
   box-shadow: none;
   margin-right: -10px;
   margin-left: -10px;
@@ -125,7 +125,7 @@ pre code {
   border-radius: 3px;
   font-size: 85%;
   line-height: 1.2;
-  background-color: #f7f7f7;
+  background-color: #eaeaea;
   /*  border-left: 3px solid #dedede;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;*/
