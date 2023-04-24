@@ -186,7 +186,7 @@ img[src$="#border"] {
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  text-align: left /*justify*/;
+  text-align: left /*left justify*/;
 } 
 .main {
   padding: 25px;
