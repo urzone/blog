@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>三张红玫瑰</title>
+      <link>https://blog.urz.one/cn/2023-04-30/fate-and-coincidence/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-04-30/fate-and-coincidence/</guid>
+      <description>又及月末。 似乎越来越说不清楚，很多事情，到底是命运的安排亦或者只是时间线上的巧合。而一切又须从与尼泊尔的远程会议前说起。 只记得那天傍晚，心血</description>
+    </item>
+    
+    <item>
       <title>Words from Claude</title>
       <link>https://blog.urz.one/cn/2023-04-26/words-from-claude/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
@@ -897,15 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2020-11-18/delete-selected-repositories/</guid>
       <description>1. 创建具有删除权限的 token settings -&amp;gt; Developer settings -&amp;gt; Personal access tokens -&amp;gt; Generate new token 选择 delete_repo，记录该 token。 2. 构建需删除仓库的文本 repos.txt name/repository1 name/repository2 …… 3. 构建请求脚本 delete_repo.py</description>
-    </item>
-    
-    <item>
-      <title>算了吧</title>
-      <link>https://blog.urz.one/cn/2020-11-17/let-it-go/</link>
-      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2020-11-17/let-it-go/</guid>
-      <description>想你呐，想你呐， 这样的话， 在心底长出了茧疤。 可是啊，可是啊， 我的爱人， 昨儿已天涯。 所有呐，所有呐， 回过头来， 你究竟在哪儿。 这人间啊，人间啊，</description>
     </item>
     
   </channel>
