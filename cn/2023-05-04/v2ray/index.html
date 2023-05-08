@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>v2ray - XiaO | 缄默之语</title>
+    <meta property="og:title" content="v2ray - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="有时候，简单粗暴实则为一种更有效的问题处理方式。譬如，当我需要查找一些文献的时候，在浏览器里，我得到的是网络服务商如下的反馈：
+Web Page Blocked Access to the web page you were trying to visit has been blocked due to phishing, malware, or copyright infringing &amp;hellip;">
+      <meta property="og:description" content="有时候，简单粗暴实则为一种更有效的问题处理方式。譬如，当我需要查找一些文献的时候，在浏览器里，我得到的是网络服务商如下的反馈：
+Web Page Blocked Access to the web page you were trying to visit has been blocked due to phishing, malware, or copyright infringing &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>v2ray</h1>
+
+
+<h3>XiaO / 
+2023-05-04</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>有时候，简单粗暴实则为一种更有效的问题处理方式。譬如，当我需要查找一些文献的时候，在浏览器里，我得到的是网络服务商如下的反馈：</p>
+<pre tabindex="0"><code>Web Page Blocked
+
+Access to the web page you were trying to visit has been blocked due to phishing, malware, or copyright infringing content. Always exercise caution when clicking on links, especially those found in email messages.
+
+User: xx.xx.xx.xxx
+
+URL: xxx-xxx.xx
+
+Category: copyright-infringement
+</code></pre><p>以此，我着实出离地愤怒了。花了钱，买了道，你还要管我去哪里！当然，有人会说了，这终究好过某些根本不告诉你缘由的行为。奈何，收拾行囊，再次跑路。</p>
+<h2 id="v2ray-与-qv2ray">v2ray 与 Qv2ray</h2>
+<p>简单说来，<a href="https://github.com/v2ray/v2ray-core">v2ray</a> 是跑路的核心装备，<a href="https://github.com/Qv2ray/Qv2ray">Qv2ray</a> 则为这件装备打上了更易于使用的马甲。</p>
+<p>对于新机器，可在终端里执行如下命令，其会自动安装 <code>v2ray</code>与<code>qv2ay</code>：</p>
+<pre tabindex="0"><code>brew install qv2ray 
+</code></pre><p>对于老爷机，需要注意 v2ray 的版本。譬如，系统 Catalina 下，可选择 <a href="https://raw.githubusercontent.com/Homebrew/homebrew-core/3ca91ac17be25ac1c4d7f720b74b3562dad73197/Formula/v2ray.rb">v4.45.2</a>，下载该文件。</p>
+<pre tabindex="0"><code>brew install path/to/v2ray.rb # 即刚下载的文件的路径
+
+brew install qv2ray
+</code></pre><h2 id="qv2ray-插件">Qv2ray 插件</h2>
+<p>Qv2ray 并不支持 v2ray 以外的代理协议，因此在将其作为其它协议客户端使用前，需要为 Qv2ray 添加相应插件（注意插件版本号和 Qv2ray 版本号对应）：</p>
+<ul>
+<li><a href="https://github.com/Qv2ray/QvPlugin-SS/releases/">Qv2ray Shadowsocks 插件</a></li>
+<li><a href="https://github.com/Qv2ray/QvPlugin-SSR/releases/">Qv2ray SSR 插件</a></li>
+<li><a href="https://github.com/Qv2ray/QvPlugin-Trojan/releases">Qv2ray Trojan 插件</a></li>
+<li><a href="https://github.com/Qv2ray/QvPlugin-Trojan-Go/releases/">Qv2ray Trojan-go 插件</a></li>
+<li><a href="https://github.com/Qv2ray/QvPlugin-NaiveProxy/releases/">Qv2ray NaiveProxy 插件</a></li>
+</ul>
+<p>将下载的插件放入插件文件夹 <code>~/Library/Preferences/qv2ray/plugins</code>。</p>
+<h2 id="配置-qv2ray">配置 Qv2ray</h2>
+<p>启动 Qv2ray，在其首选项中检查能否正常启动 v2ray：</p>
+<pre tabindex="0"><code>Preferences --&gt; Kernel Settings: 
+- [ ] Check System Date and Time from the Internet
+- [ ] Check V2Ray Core Settings
+</code></pre><p>如果没有报错即安装完成，否则需要检查 v2ray 的版本，安装合适的版本。如此，装备即打造完成。</p>
+<h2 id="使用-qv2ray">使用 Qv2ray</h2>
+<p>从 Import &ndash;&gt; Share Link，将 <code>vless:// </code>, <code>vmess:// </code>, <code>trojan:// </code> 等开头的地址复制进去，即完成导入。</p>
+<h2 id="ip-被谷歌惦记">IP 被谷歌惦记</h2>
+<p>挂上 VPS 后，访问 Google 老是跳人机验证，非常频繁。此意味着该 IPv4 被谷歌标记为了恶意地址。因此，可能需要更换 IP 了。配置 IPv6 来访问 Google，某种意义上来说，也算是更换 IP 了。由于该虚拟主机不提供 IPv6，故而借用 <a href="https://tunnelbroker.net/">IPv6 隧道</a>，使原来仅有 IPv4 的主机拥有 IPv6。</p>
+<ul>
+<li>
+<p><a href="https://tunnelbroker.net/">IPv6 隧道</a> &ndash;&gt; Create Regular Tunnel &ndash;&gt; 输入虚拟机的 IPv4 地址，点击创建隧道 &ndash;&gt; Client IPv6 Address</p>
+</li>
+<li>
+<p>Example Configurations 示例配置，找到匹配自己虚拟机的系统的配置片段，将生成的配置片段与<a href="https://agou-ops.cn/post/%E8%A7%A3%E5%86%B3vps%E9%A2%91%E7%B9%81google%E4%BA%BA%E6%9C%BA%E9%AA%8C%E8%AF%81ip%E8%A2%AB%E5%A2%99/#%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8ipv6%E9%9A%A7%E9%81%93">下面脚本</a>中相应的片段替换，并保存为 <code>install_ipv6_tunnel.sh</code>。</p>
+</li>
+</ul>
+<pre tabindex="0"><code>#!/usr/bin/env bash 
+set -euo pipefail
+
+#
+#**************************************************
+# Author:         AGou-ops                        *
+# E-mail:         agou-ops@foxmail.com            *
+# Date:           2021-12-02                      *
+# Description:                                    *
+# Copyright 2021 by AGou-ops.All Rights Reserved  *
+#**************************************************
+
+# ----------------
+echoColor(){
+  echo -e &#34;\033[36m$1 \033[0m&#34;
+}
+
+# 启用ipv6
+
+cat &lt;&lt; EOF &gt;&gt; /etc/sysctl.conf
+net.ipv6.conf.all.disable_ipv6 = 0
+net.ipv6.conf.default.disable_ipv6 = 0
+net.ipv6.conf.lo.disable_ipv6 = 0
+EOF
+
+sysctl -p
+echoColor &#34;====== 启用ipv6 ======\n&#34;
+
+# ！！！！！重要！！！！！
+# 将下面的重定向内容替换为上面示例的配置片段内容
+cat &lt;&lt; EOF &gt;&gt;  /etc/network/interfaces
+
+ auto he-ipv6
+  iface he-ipv6 inet6 v4tunnel
+   address xxxx:xxx:a:10d::2
+   netmask 64
+   endpoint 216.xx.xx.xx
+   local 23.xx.x.xx
+   ttl 255
+   gateway 2001:xx:a:10d::1
+EOF
+
+echoColor &#34;====== 修改网络配置文件成功 ======\n&#34;
+
+apt update -y 2&gt;&amp;1 &gt; /dev/null
+apt install ifupdown dnsutils -y 2&gt;&amp;1 &gt; /dev/null
+
+echoColor &#34;====== 安装必要包完成，图个方便，不为啥 ======\n&#34;
+
+sleep 1
+# 启动ipv6网络接口，如果没生效可以尝试重启网络
+ifup he-ipv6
+echoColor &#34;====== 接口内容信息如下 ======\n&#34;
+ip a show dev he-ipv6
+
+echoColor &#34;========================\n&#34;
+# 备份原来的dns
+cp -a /etc/resolv.conf{,.bak}
+
+cat &lt;&lt; EOF &gt;&gt; /etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+EOF
+
+echoColor &#34;====== 修改dns完成 ======\n&#34;
+
+# 这里用ping查看ipv6地址也可以，这里我图方便使用dig好了
+google_ipv6=$(dig www.google.com AAAA | grep -E &#34;^www&#34; | awk &#39;{print $5}&#39;)
+
+echo &#34;$google_ipv6 www.google.com&#34; &gt; /etc/hosts
+
+echoColor &#34;====== 修改hosts文件完成 ======\n&#34;
+
+# 默认访问时会使用IPv6线路进行访问，考虑到速度问题，建议优先使用IPv4
+sed -i &#39;s@#precedence ::ffff:0:0/96  100@precedence ::ffff:0:0/96  100@g&#39; /etc/gai.conf
+
+echoColor &#34;====== 配置优先IPv4完成 ======\n&#34;
+
+echoColor &#34;\n\nDone.&#34;
+</code></pre><p>使用 root 用户运行以上脚本：</p>
+<pre tabindex="0"><code>chmod +x install_ipv6_tunnel.sh
+./install_ipv6_tunnel.sh
+</code></pre><pre tabindex="0"><code># 查询本机外网 IPv6 地址
+curl 6.ipw.cn
+
+# 测试网络是 IPv4 还是 IPv6 访问优先 (访问 IPv4/IPv6 双栈站点，如果返回IPv6地址，则IPv6访问优先)
+curl test.ipw.cn
+</code></pre><p>将域名通过 AAAA 指向上述虚拟机的 IPv6 地址。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2023-04-30/fate-and-coincidence/">三张红玫瑰</a></span>
+  <span class="nav-next"><a href="/cn/2023-05-07/continuous-crystallizer/">连续结晶仪</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2023-04-30\/fate-and-coincidence\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2023-05-07\/continuous-crystallizer\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2023</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

@@ -8,6 +8,24 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>连续结晶仪</title>
+      <link>https://blog.urz.one/cn/2023-05-07/continuous-crystallizer/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-05-07/continuous-crystallizer/</guid>
+      <description>连续结晶仪通过调节结晶发生的时长对结晶的粒径和外形进行可变的调控。具体的结晶发生时长因 API 的不同而不同，大约从几百微秒到几百毫秒不等。结晶在连</description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://blog.urz.one/cn/2023-05-04/v2ray/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-05-04/v2ray/</guid>
+      <description>有时候，简单粗暴实则为一种更有效的问题处理方式。譬如，当我需要查找一些文献的时候，在浏览器里，我得到的是网络服务商如下的反馈： Web Page Blocked Access to the web</description>
+    </item>
+    
+    <item>
       <title>三张红玫瑰</title>
       <link>https://blog.urz.one/cn/2023-04-30/fate-and-coincidence/</link>
       <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
@@ -888,24 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2020-12-06/something/</guid>
       <description>理解 其实是一种奢侈，复杂才是个体的本质。而迷宫不过是环绕复杂的外层壁垒，也是通往复杂的必经之路。正如勇敢的外延，是鲁莽；审慎的外延，其实是懦</description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>https://blog.urz.one/cn/2020-11-18/about-us/</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2020-11-18/about-us/</guid>
-      <description>夜半里，思念如潮水涌来，没过我的前半生。 想来，所有一切，都会在即将到来的某一天里，变成回忆，永不复来，便悲从中来。 亲爱的人啊，这茫茫人世里，</description>
-    </item>
-    
-    <item>
-      <title>批量删除 GitHub 仓库</title>
-      <link>https://blog.urz.one/cn/2020-11-18/delete-selected-repositories/</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2020-11-18/delete-selected-repositories/</guid>
-      <description>1. 创建具有删除权限的 token settings -&amp;gt; Developer settings -&amp;gt; Personal access tokens -&amp;gt; Generate new token 选择 delete_repo，记录该 token。 2. 构建需删除仓库的文本 repos.txt name/repository1 name/repository2 …… 3. 构建请求脚本 delete_repo.py</description>
     </item>
     
   </channel>

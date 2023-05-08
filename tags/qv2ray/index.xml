@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qv2ray on XiaO | 缄默之语</title>
+    <link>https://blog.urz.one/tags/qv2ray/</link>
+    <description>Recent content in qv2ray on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/qv2ray/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>v2ray</title>
+      <link>https://blog.urz.one/cn/2023-05-04/v2ray/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-05-04/v2ray/</guid>
+      <description>有时候，简单粗暴实则为一种更有效的问题处理方式。譬如，当我需要查找一些文献的时候，在浏览器里，我得到的是网络服务商如下的反馈： Web Page Blocked Access to the web</description>
+    </item>
+    
+  </channel>
+</rss>
