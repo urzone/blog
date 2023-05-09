@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.urz.one/tags/301/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/cloud-flare/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/cn/2023-05-09/cloud-flare-forwarding-url/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/forwarding-url/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/%E9%87%8D%E5%AE%9A%E5%90%91/</loc>
+    <lastmod>2023-05-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.urz.one/cn/2023-05-07/continuous-crystallizer/</loc>
     <lastmod>2023-05-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +27,6 @@
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.urz.one/tags/qv2ray/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.urz.one/tags/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.urz.one/tags/v2ray/</loc>

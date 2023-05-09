@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cloud Flare 重定向</title>
+      <link>https://blog.urz.one/cn/2023-05-09/cloud-flare-forwarding-url/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-05-09/cloud-flare-forwarding-url/</guid>
+      <description>网站域名发生变更后，搜索引擎所收录的旧地址，通通变成了 404. 这很影响网站访问者的心情啊。 域名托管 新域名托管到 Cloud Flare 后，即可通过配置规则对旧地址重定</description>
+    </item>
+    
+    <item>
       <title>连续结晶仪</title>
       <link>https://blog.urz.one/cn/2023-05-07/continuous-crystallizer/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
@@ -897,15 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2020-12-17/south/</guid>
       <description>是夜，梦中惊醒，窗外昏黑。路灯微弱的呼吸，发出惨淡的光。梦里的具象已然忘却，只是梦的本身留给人不绝的恐惧，袭上心来，让人慌张。微微侧头，一片</description>
-    </item>
-    
-    <item>
-      <title>杂想</title>
-      <link>https://blog.urz.one/cn/2020-12-06/something/</link>
-      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2020-12-06/something/</guid>
-      <description>理解 其实是一种奢侈，复杂才是个体的本质。而迷宫不过是环绕复杂的外层壁垒，也是通往复杂的必经之路。正如勇敢的外延，是鲁莽；审慎的外延，其实是懦</description>
     </item>
     
   </channel>
