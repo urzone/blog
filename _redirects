@@ -1,0 +1,21 @@
+# netlify redirects
+# from_url to_url
+
+# Short-Blog
+
+# /blog/scli         /blog/simple-click/
+# /blog/cmdt         /blog/cmd-exe-tips/
+
+
+# splats
+
+# /b*             /blog/:splat
+# /n*             /notes/:splat
+
+
+# External
+
+# /twitter        https://twitter.com/_WaylonWalker
+# /github         https://github.com/WaylonWalker
+# /devto          https://dev.to/waylonwalker/
+
