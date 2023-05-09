@@ -120,7 +120,8 @@ URL: xxx-xxx.xx
 
 Category: copyright-infringement
 </code></pre><p>以此，我着实出离地愤怒了。花了钱，买了道，你还要管我去哪里！当然，有人会说了，这终究好过某些根本不告诉你缘由的行为。奈何，收拾行囊，再次跑路。</p>
-<h2 id="v2ray-与-qv2ray">v2ray 与 Qv2ray</h2>
+<h2 id="v2ray-客户端">v2ray 客户端</h2>
+<h3 id="v2ray-与-qv2ray">v2ray 与 Qv2ray</h3>
 <p>简单说来，<a href="https://github.com/v2ray/v2ray-core">v2ray</a> 是跑路的核心装备，<a href="https://github.com/Qv2ray/Qv2ray">Qv2ray</a> 则为这件装备打上了更易于使用的马甲。</p>
 <p>对于新机器，可在终端里执行如下命令，其会自动安装 <code>v2ray</code>与<code>qv2ay</code>：</p>
 <pre tabindex="0"><code>brew install qv2ray 
@@ -128,7 +129,7 @@ Category: copyright-infringement
 <pre tabindex="0"><code>brew install path/to/v2ray.rb # 即刚下载的文件的路径
 
 brew install qv2ray
-</code></pre><h2 id="qv2ray-插件">Qv2ray 插件</h2>
+</code></pre><h3 id="qv2ray-插件">Qv2ray 插件</h3>
 <p>Qv2ray 并不支持 v2ray 以外的代理协议，因此在将其作为其它协议客户端使用前，需要为 Qv2ray 添加相应插件（注意插件版本号和 Qv2ray 版本号对应）：</p>
 <ul>
 <li><a href="https://github.com/Qv2ray/QvPlugin-SS/releases/">Qv2ray Shadowsocks 插件</a></li>
@@ -138,16 +139,149 @@ brew install qv2ray
 <li><a href="https://github.com/Qv2ray/QvPlugin-NaiveProxy/releases/">Qv2ray NaiveProxy 插件</a></li>
 </ul>
 <p>将下载的插件放入插件文件夹 <code>~/Library/Preferences/qv2ray/plugins</code>。</p>
-<h2 id="配置-qv2ray">配置 Qv2ray</h2>
+<h3 id="配置-qv2ray">配置 Qv2ray</h3>
 <p>启动 Qv2ray，在其首选项中检查能否正常启动 v2ray：</p>
 <pre tabindex="0"><code>Preferences --&gt; Kernel Settings: 
 - [ ] Check System Date and Time from the Internet
 - [ ] Check V2Ray Core Settings
 </code></pre><p>如果没有报错即安装完成，否则需要检查 v2ray 的版本，安装合适的版本。如此，装备即打造完成。</p>
-<h2 id="使用-qv2ray">使用 Qv2ray</h2>
+<h3 id="使用-qv2ray">使用 Qv2ray</h3>
 <p>从 Import &ndash;&gt; Share Link，将 <code>vless:// </code>, <code>vmess:// </code>, <code>trojan:// </code> 等开头的地址复制进去，即完成导入。</p>
-<h2 id="ip-被谷歌惦记">IP 被谷歌惦记</h2>
-<p>挂上 VPS 后，访问 Google 老是跳人机验证，非常频繁。此意味着该 IPv4 被谷歌标记为了恶意地址。因此，可能需要更换 IP 了。配置 IPv6 来访问 Google，某种意义上来说，也算是更换 IP 了。由于该虚拟主机不提供 IPv6，故而借用 <a href="https://tunnelbroker.net/">IPv6 隧道</a>，使原来仅有 IPv4 的主机拥有 IPv6。</p>
+<h2 id="v2ray-服务器端">v2ray 服务器端</h2>
+<p>使用 VPS 服务商提供的用户名合明码，登录相应的虚拟主机管理页面。此时虚拟主机中可能会有预装系统，当然自己也可以重新装系统。</p>
+<p>使用 <a href="https://www.jjput.com/archives/macos-for-ssh">SSH 管理工具</a>，连接远端的虚拟主机，譬如，<a href="https://github.com/kingToolbox/WindTerm">WindTerm</a>，<a href="https://termius.com/">termius</a>，<a href="https://www.hostbuf.com/">FinalShell</a> 等。</p>
+<h3 id="八合一-一键脚本httpswwwv2ray-agentcom"><a href="https://www.v2ray-agent.com/">八合一 一键脚本</a></h3>
+<ol>
+<li>在 SSH 管理工具中，连接远端虚拟主机后，下载该脚本安装相应的 v2ray 服务：</li>
+</ol>
+<pre tabindex="0"><code>wget -P /root -N --no-check-certificate &#34;https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh&#34; &amp;&amp; chmod 700 /root/install.sh &amp;&amp; /root/install.sh
+</code></pre><ol start="2">
+<li>安装脚本，依次选择如下，</li>
+</ol>
+<pre tabindex="0"><code>1.安装
+
+1.Xray-core
+
+请输入要配置的域名 例: www.v2ray-agent.com ---&gt; 域名:xxxx.xxx
+(此处所使用的域名，如果 DNS 由 CloudFlare 管理，此处仅设置为 DNS ONLY，暂时不要开启 Proxy)
+
+默认端口 443 [回车即可]
+
+默认 TLS 证书 [回车即可]
+
+生成随机路径 [回车即可]
+
+默认不添加 CloudFlare 自选 CNAME [回车即可]
+
+默认随机 UUID [回车即可]
+
+使用 TLS + Vision 端口
+</code></pre><ol start="3">
+<li>相关服务管理</li>
+</ol>
+<pre tabindex="0"><code>$ vasma
+
+============================================================== 
+1.重新安装 
+2.任意组合安装 
+3.切换 Trojan[XTLS] 
+4.Hysteria 管理 
+5.REALITY 管理 
+-------------------------工具管理----------------------------- 
+6.账号管理 
+7.更换伪装站 
+8.更新证书 
+9.更换 CDN 节点 
+10.IPv6 分流 
+11.WARP 分流 
+12.流媒体工具 
+13.添加新端口 
+14.BT 下载管理 
+15.切换 alpn 
+16.域名黑名单 
+-------------------------版本管理----------------------------- 
+17.core 管理 
+18.更新脚本 
+19.安装 BBR、DD 脚本 
+-------------------------脚本管理----------------------------- 
+20.查看日志 
+21.卸载脚本 
+</code></pre><h2 id="ipv6-虚拟地址httpswwwmoeelfcomarchives301html"><a href="https://www.moeelf.com/archives/301.html">IPv6 虚拟地址</a></h2>
+<p>挂上 VPS 后，访问 Google 总是跳人机验证。此意味着该 IPv4 被谷歌标记为了恶意地址。因此，可能需要更换 IP 了。配置并使用 IPv6 来访问 Google，某种意义上来说，也算是更换 IP 了。由于该廉价虚拟主机不提供 IPv6，故而借用虚拟 IPv6 ，使原来仅有 IPv4 的主机拥有 IPv6 地址。</p>
+<h3 id="warp-一键脚本httpsgithubcomfscarmenwarp添加-ipv6-虚拟地址"><a href="https://github.com/fscarmen/warp">warp 一键脚本</a>，添加 IPv6 虚拟地址</h3>
+<pre tabindex="0"><code>wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh &amp;&amp; bash menu.sh
+
+warp [option] [lisence]
+
+======================================================================================================================
+
+ 1.  为 IPv4 only 添加 WARP IPv4 网络接口 (bash menu.sh 4) 
+ 2.  为 IPv4 only 添加 WARP IPv6 网络接口 (bash menu.sh 6) 
+ 3.  为 IPv4 only 添加 WARP 双栈网络接口 (bash menu.sh d) 
+ 4.  打开 WARP (warp o) 
+ 5.  安装 CloudFlare Client 并设置为 Proxy 模式 (bash menu.sh c) 
+ 6.  更换支持 Netflix 的 IP (warp i) 
+ 7.  永久关闭 WARP 网络接口，并删除 WARP、 Linux Client 和 WireProxy (warp u) 
+ 8.  刷 WARP+ 流量 (warp p) 
+ 9.  升级内核、安装BBR、DD脚本 (warp b) 
+ 10. 同步最新版本 (warp v) 
+ 11. WARP 解锁 Netflix 等流媒体专业一键(支持多平台、多方式和 TG 通知) 
+ 12. 安装 iptable + dnsmasq + ipset，让 WARP IPv4 only 接管流媒体流量 (不适用于 IPv6 only VPS) (bash menu.sh e) 
+ 13. 安装 wireproxy，让 WARP 在本地创建一个 socks5 代理 (bash menu.sh w) 
+ 14. 安装 CloudFlare Client 并设置为 WARP 模式 (bash menu.sh l) 
+ 0.  退出脚本 
+</code></pre><p>可选择 2，为 IPv4 only 添加 WARP IPv6 网络接口，此时账户类型可选择免费账户，以便更容易分配 IP 地址。</p>
+<pre tabindex="0"><code>warp h
+ warp h (帮助菜单）
+ warp n (获取 WARP IP)
+ warp o (临时warp开关)
+ warp u (卸载 WARP 网络接口和 Socks5 Client)
+ warp b (升级内核、开启BBR及DD)
+ warp a (更换账户为 Free，WARP+ 或 Teams)
+ warp p (刷WARP+流量)
+ warp v (同步脚本至最新版本)
+ warp r (WARP Linux Client 开关)
+ warp 4/6 (WARP IPv4/IPv6 单栈)
+ warp d (WARP 双栈)
+ warp c (安装 WARP Linux Client，开启 Socks5 代理模式)
+ warp l (安装 WARP Linux Client，开启 WARP 模式)
+ warp i (更换支持 Netflix 的IP)
+ warp e (安装 Iptables + dnsmasq + ipset 解决方案)
+ warp w (安装 WireProxy 解决方案)
+ warp y (WireProxy socks5 开关)
+ warp s 4/6/d (优先级: IPv4 / IPv6 / VPS default)
+</code></pre><ul>
+<li>
+<p>后续可再选择  <code>warp a</code> 升级账户类型，更容易分配到 IP。</p>
+</li>
+<li>
+<p>验证优先级，执行 <code>curl ip.p3terx.com</code> 命令，显示 IPv4 地址则代表 IPv4 优先，否则为 IPv6 优先。</p>
+</li>
+</ul>
+<p>IPv4 与 IPv6 网络优先级设置，优先级不是一定要设置的，这仅限于 VPS 本身对外发起的网络请求。使用某科学的上网工具不一定有效，建议使用<code>工具内置的路由分流</code>功能，即前面八合一一键脚本中的 <code>10. IPv6</code> 分流。</p>
+<h3 id="ipv6-分流">IPv6 分流</h3>
+<pre tabindex="0"><code>vasma
+10
+speedtest,facebook,cn,perplexity,startpage,google,youtube
+</code></pre><p>如此，菇菇的人机验证就消失了。</p>
+<h3 id="cloudflare-warp-网速测试">Cloudflare WARP 网速测试</h3>
+<p>使用 speedtest.net 提供的 CLI 工具测试通过 WARP 访问外部网络的极限网速，不过仅限测试 IPv4 的速度。</p>
+<p>安装 Ookla Speedtest CLI</p>
+<pre tabindex="0"><code>curl -fsSL git.io/speedtest-cli.sh | sudo bash
+</code></pre><p>测速：</p>
+<pre tabindex="0"><code>speedtest
+
+
+   Speedtest by Ookla
+
+     Server: Ziply Fiber - Seattle, WA (id = 35180)
+        ISP: Cloudflare
+    Latency:     1.69 ms   (0.07 ms jitter)
+   Download:   140.95 Mbps (data used: 121.4 MB)                               
+     Upload:   191.01 Mbps (data used: 165.9 MB)                               
+Packet Loss:     1.4%
+</code></pre><h2 id="he-ipv6-tunnel-broker">HE IPv6 Tunnel Broker</h2>
+<p><a href="https://tunnelbroker.net/">IPv6 隧道</a></p>
 <ul>
 <li>
 <p><a href="https://tunnelbroker.net/">IPv6 隧道</a> &ndash;&gt; Create Regular Tunnel &ndash;&gt; 输入虚拟机的 IPv4 地址，点击创建隧道 &ndash;&gt; Client IPv6 Address</p>
@@ -243,8 +377,7 @@ curl 6.ipw.cn
 
 # 测试网络是 IPv4 还是 IPv6 访问优先 (访问 IPv4/IPv6 双栈站点，如果返回IPv6地址，则IPv6访问优先)
 curl test.ipw.cn
-</code></pre><p>将域名通过 AAAA 指向上述虚拟机的 IPv6 地址。</p>
-
+</code></pre>
 
   <footer>
   
