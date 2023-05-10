@@ -377,7 +377,45 @@ curl 6.ipw.cn
 
 # 测试网络是 IPv4 还是 IPv6 访问优先 (访问 IPv4/IPv6 双栈站点，如果返回IPv6地址，则IPv6访问优先)
 curl test.ipw.cn
-</code></pre>
+</code></pre><h3 id="clashx-or-clashx-meta">ClashX or ClashX Meta</h3>
+<p>域名系统是使用中最重要的互联网服务之一，它使我们能够查看内容、发送电子邮件甚至访问我们的社交媒体。没有 DNS，我们根本无法浏览互联网。 DNS 服务器是帮助我们将主机名解析为 IP 地址并管理和处理来自客户端的 DNS 请求的服务器。</p>
+<p>开启 ClashX 状态下，Mac 进入休眠状态。再次唤醒后，关闭 ClashX，有可能出现无法上网的情况。网页返回 &ldquo;无法找到服务器&rdquo; 的信息。<a href="https://github.com/yichengchen/clashX/discussions/814">据说</a>是因为 clashX 创建了一个虚拟网卡，同时修改了系统设置位置的 DNS 服务器，导致无正常的 DNS 服务器可用。因为当你去查看系统设置，DNS Servers: 127.0.0.1。这能解析出个毛线球球了。</p>
+<p>关闭 ClashX，打开系统设置：Network &ndash;&gt; DNS &ndash;&gt;  DNS Servers &ndash;&gt; 选中 127.0.0.1 &ndash;&gt; 点击减号删除，点击加号，添加<a href="https://securitytrails.com/blog/dns-servers-privacy-security">可用的 DNS</a>，譬如：</p>
+<pre tabindex="0"><code>1. Cloudflare DNS
+Primary and secondary DNS servers:
+主要和次要 DNS 服务器：
+
+    1.1.1.1
+    1.0.0.1
+
+The DNS resolver also operates through IPv6:
+DNS 解析器也通过 IPv6 运行：
+
+    2606:4700:4700::1111
+    2606:4700:4700::1001
+
+2. OpenDNS
+Preferred and alternate DNS servers are:
+首选和备用 DNS 服务器是：
+
+    208.67.222.123
+    208.67.220.123
+
+3. DNSWatch
+Primary and secondary DNS servers:
+主要和次要 DNS 服务器：
+
+    84.200.69.80
+    84.200.70.40
+
+4. Quad9 DNS
+Primary and secondary DNS servers:
+主要和次要 DNS 服务器：
+
+    9.9.9.9
+    149.112.112.112
+</code></pre><p>最后记得点击<code>OK</code> 和 <code>Apply</code>。如此，又可以打开毛线球球了。至于 ClashX 一类的，请神容易，送神难呐。</p>
+
 
   <footer>
   
