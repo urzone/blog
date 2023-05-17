@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>抖音批量下载 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="抖音批量下载 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="在需要存储来自抖音的系列视频教程时，批量下载极大地简化了工作。
+[&amp;hellip;] 克隆 TikTokDownload 在 GitHub 的仓库到本地，会在根目录生成一个 TikTokDownload 文件夹。
+git clone https://gitclone.com/github.com/Johnserf-Seed/TikTokDownload.git 安装与配置 使用 conda 安装相 &amp;hellip;">
+      <meta property="og:description" content="在需要存储来自抖音的系列视频教程时，批量下载极大地简化了工作。
+[&amp;hellip;] 克隆 TikTokDownload 在 GitHub 的仓库到本地，会在根目录生成一个 TikTokDownload 文件夹。
+git clone https://gitclone.com/github.com/Johnserf-Seed/TikTokDownload.git 安装与配置 使用 conda 安装相 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>抖音批量下载</h1>
+
+
+<h3>XiaO / 
+2023-05-11</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>在需要存储来自抖音的系列视频教程时，批量下载极大地简化了工作。</p>
+<h2 id="工具一-tiktokdownloadhttpsgithubcomjohnserf-seedtiktokdownload">工具一 <a href="https://github.com/Johnserf-Seed/TikTokDownload">TikTokDownload</a></h2>
+<h3 id="下载">下载</h3>
+<p>克隆 <a href="https://github.com/Johnserf-Seed/TikTokDownload">TikTokDownload</a> 在 GitHub 的仓库到本地，会在根目录生成一个 TikTokDownload 文件夹。</p>
+<pre tabindex="0"><code>git clone https://gitclone.com/github.com/Johnserf-Seed/TikTokDownload.git
+</code></pre><h3 id="安装与配置">安装与配置</h3>
+<ol>
+<li>使用 conda 安装相应的环境</li>
+</ol>
+<pre tabindex="0"><code>conda create -n tiktokdownload python=3.11.3 # 安装虚拟环境
+conda activate tiktokdownload # 激活虚拟环境
+pip install -r requirements.txt # 在虚拟环境中安装所需要的包
+</code></pre><ol start="2">
+<li>在终端中，定位到项目文件夹 <code>TikTokDownload</code> 下的 <code>Util</code> 文件夹：</li>
+</ol>
+<pre tabindex="0"><code>npm i # 安装相应的 node 包
+</code></pre><ol start="3">
+<li>打开 TikTokDownload 目录下的 conf.ini 文件，按照要求进行配置。</li>
+</ol>
+<p>修改 server.sh 文件的内容如下：</p>
+<pre tabindex="0"><code>cd ~/TikTokDownload/Util
+python3 Server.py
+</code></pre><p>在终端定位到 TikTokDownload，给予文件的执行权限</p>
+<pre tabindex="0"><code>chmod +x server.sh 
+</code></pre><ol start="4">
+<li>将下载工具添加到环境变量，如此可在任一终端窗口启动下载：</li>
+</ol>
+<pre tabindex="0"><code>alias tiktoks=&#39;~/TikTokDownload/server.sh&#39;
+alias tiktokd=&#39;python ~/TikTokDownload/tiktoktool.py&#39;
+</code></pre><h3 id="启动下载">启动下载</h3>
+<p>配置好以上工具，下载过程简化为：</p>
+<pre tabindex="0"><code>conda activate tiktokdownload # 激活环境
+tiktoks # 启动解析接口
+tiktokd -u https://v.douyin.com/UdwLyPR/ # 下载
+</code></pre><p><strong>注意：在终端启动下载的时候，接口解析窗口要保留，不能关闭，否则无法下载</strong>。</p>
+<pre tabindex="0"><code>########################################################################################################################
+
+                                                TikTokTool V1.3.0.80
+        使用说明：
+                1、本程序目前支持命令行调用和配置文件操作，GUI预览版本已经发布
+                2、命令行操作方法：1）将本程序路径添加到环境变量
+                                2）控制台输入 TikTokTool -u https://v.douyin.com/jqwLHjF/
+
+                3、配置文件操作方法：1）运行软件前先打开目录下 conf.ini 文件配置用户主页和音乐下载模式
+                                2）按照控制台输出信息操作
+
+                4、如有您有任何bug或者意见反馈请在 https://github.com/Johnserf-Seed/TikTokDownload/issues 发起
+                5、GUI预览版本现已发布，操作更简单 https://github.com/Johnserf-Seed/TikTokDownload/tags 下载
+                6、TikTokLive 输入抖音直播间web端链接，例如 https://live.douyin.com/176819813905
+                7、新版工具fastdl正在开发中 ----&gt; https://github.com/Johnserf-Seed/fastdl
+
+        注意：  目前已经支持app内分享短链和web端长链识别。
+        
+########################################################################################################################
+
+[   🍎   ]:MacOS平台
+[   🗻   ]:获取最新版本号中!
+[   🚩   ]:目前 13080 版本已是最新
+[  警告  ]:未检测到命令，将使用配置文件进行批量下载!
+[  提示  ]:读取本地配置完成!
+[  警告  ]:未检测到命令，将使用配置文件进行批量下载!
+[  提示  ]:读取本地配置完成!
+[  提示  ]:批量获取所有视频中!
+[  提示  ]:用户的sec_id=MS4wLjABBBBDFDFDSDF3nckmLU8MKXB4Aao7ZOOLaDFDSFDSKAzKMDRh_6DFDDD4
+[  提示  ]:正在进行第 1 次尝试
+[  用户  ]:yuanyuan
+[  提示  ]:抓获用户主页数据成功!
+[  提示  ]:正在替换当页所有作品非法字符，耐心等待!
+[  提示  ]:正在替换作者非法字符，耐心等待!
+</code></pre><h2 id="工具二-nodespider_tiktokhttpsgithubcomyujian920nodespider_tiktok">工具二 <a href="https://github.com/YuJian920/nodeSpider_tiktok">nodeSpider_tiktok</a></h2>
+<h3 id="下载-1">下载</h3>
+<p>克隆 <a href="https://github.com/YuJian920/nodeSpider_tiktok">nodeSpider_tiktok</a> 在 GitHub 的仓库到本地，会在根目录生成一个 nodeSpider_tiktok 文件夹。</p>
+<pre tabindex="0"><code>git clone https://gitclone.com/github.com/Johnserf-Seed/TikTokDownload.git
+</code></pre><h3 id="配置">配置</h3>
+<p>在使用之前，修改配置文件 ~/nodeSpider_tiktok/config/config.json</p>
+<pre tabindex="0"><code>&#34;user&#34;: &#34;&#34;                  // 用户链接，支持长链和短链
+&#34;type&#34;: &#34;post&#34; | &#34;like&#34;     // post-用户发布 | like-用户喜欢
+&#34;limit&#34;: 0                  // 下载数限制 0 表示无限制 下载所有视频
+&#34;odin_tt&#34;: &#34;&#34;               // Cookies 中的 odin_tt，如果工作正常则不需要修改
+&#34;passport_csrf_token&#34;: &#34;&#34;   // Cookies 中的 passport_csrf_token，如果工作正常则不需要修改
+&#34;max_retry&#34;: 50             // 获取内容的最大重试次数
+</code></pre><p>cookies 获取方式：浏览器打开<a href="https://www.douyin.com">抖音</a> &mdash;&gt; Inspect &mdash;&gt; Network &mdash;&gt; platform=webapp &mdash;&gt; Headers &mdash;&gt; Cookies.</p>
+<p>譬如如下的配置：</p>
+<pre tabindex="0"><code>{
+  &#34;user&#34;: &#34;https://v.douyin.com/U25eUYf/&#34;,
+  &#34;type&#34;: &#34;post&#34;,
+  &#34;limit&#34;: 0,
+  &#34;odin_tt&#34;: &#34;324fb4ea4a89c0c05827e18a1ed9cf9bf8a17f7705fcc793fec935b637867e2a5a9b8168c885554d029919117a18ba69&#34;,
+  &#34;passport_csrf_token&#34;: &#34;edadffaa580f77836a237a68c54ed983&#34;,
+  &#34;downloadDir&#34;: &#34;download/&#34;,
+  &#34;max_retry&#34;: 50
+}
+</code></pre><h3 id="使用">使用</h3>
+<pre tabindex="0"><code>// 安装依赖
+pnpm install
+
+// 启动爬虫
+pnpm run start
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2023-05-09/cloud-flare-forwarding-url/">Cloud Flare 重定向</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2023-05-09\/cloud-flare-forwarding-url\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2023</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

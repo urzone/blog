@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>抖音批量下载</title>
+      <link>https://blog.urz.one/cn/2023-05-11/tiktok-download/</link>
+      <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-05-11/tiktok-download/</guid>
+      <description>在需要存储来自抖音的系列视频教程时，批量下载极大地简化了工作。 工具一 TikTokDownload 下载 克隆 TikTokDownload 在 GitHub 的仓库到本地，会在根目录生成一个 TikTokDownload 文件夹。 git clone https://gitclone.com/github.com/Johnserf-Seed/TikTokDownload.git 安装与配</description>
+    </item>
+    
+    <item>
       <title>Cloud Flare 重定向</title>
       <link>https://blog.urz.one/cn/2023-05-09/cloud-flare-forwarding-url/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
@@ -897,15 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2020-12-29/meaning/</guid>
       <description>走过千万岁月，我是否依然会记得，我曾是谁。 时常在想，如果人的一生都是注定的，那么我们的到来，对这个世界到底意味着什么。一些时候，清醒着，却总</description>
-    </item>
-    
-    <item>
-      <title>南方</title>
-      <link>https://blog.urz.one/cn/2020-12-17/south/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2020-12-17/south/</guid>
-      <description>是夜，梦中惊醒，窗外昏黑。路灯微弱的呼吸，发出惨淡的光。梦里的具象已然忘却，只是梦的本身留给人不绝的恐惧，袭上心来，让人慌张。微微侧头，一片</description>
     </item>
     
   </channel>
