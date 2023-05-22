@@ -76,3 +76,11 @@ code {
   font-style: normal;
 }
 
+@font-face {
+    font-family: oflgoudystm;
+    src: url(fonts/oflgoudystm.eot);
+    src: url(fonts/oflgoudystm.eot?#iefix) format('embedded-opentype'), url(fonts/oflgoudystm.woff) format('woff'), url(fonts/oflgoudystm.ttf) format('truetype'), url(fonts/oflgoudystm.svg#oflgoudystm) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
