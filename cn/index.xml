@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>MusiX</title>
+      <link>https://blog.urz.one/cn/2023-05-27/musix/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-05-27/musix/</guid>
+      <description>音频文件 影响音频文件大小的因素包括： 声道：指音频信号传输过程中所采用的通路数目，常见的有单声道和立体声两种，也有更多声道的多声道音频。 采样率</description>
+    </item>
+    
+    <item>
       <title>抖音批量下载</title>
       <link>https://blog.urz.one/cn/2023-05-11/tiktok-download/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
@@ -897,15 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2020-12-31/2020-annual-review/</guid>
       <description>一月： 此刻，我知道，我是爱着这片土地的。只是我渐渐明白，遍身罗绮者，不是养蚕人。某些口号，不过是放在驴嘴前的萝卜，以便驼着那些肥腻的油脂浮于</description>
-    </item>
-    
-    <item>
-      <title>意义</title>
-      <link>https://blog.urz.one/cn/2020-12-29/meaning/</link>
-      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2020-12-29/meaning/</guid>
-      <description>走过千万岁月，我是否依然会记得，我曾是谁。 时常在想，如果人的一生都是注定的，那么我们的到来，对这个世界到底意味着什么。一些时候，清醒着，却总</description>
     </item>
     
   </channel>

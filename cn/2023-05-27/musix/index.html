@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>MusiX - XiaO | 缄默之语</title>
+    <meta property="og:title" content="MusiX - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="影响音频文件大小的因素包括：
+[&amp;hellip;] 无损音乐格式一般指不会损失原始音频文件质量的音乐格式，常见的无损音乐格式包括：
+[&amp;hellip;] 有损音乐格式是指通过有损压缩算法对音频信号进行处理，以减小文件大小，但同时也牺牲了一定的音频质量。常见的有损音乐格式包括：
+[&amp;hellip;] Opus 是一个开放、免费、通用的有损音频编解码器。Opus 整合了以语音编码为导向的 SILK 和 &amp;hellip;">
+      <meta property="og:description" content="影响音频文件大小的因素包括：
+[&amp;hellip;] 无损音乐格式一般指不会损失原始音频文件质量的音乐格式，常见的无损音乐格式包括：
+[&amp;hellip;] 有损音乐格式是指通过有损压缩算法对音频信号进行处理，以减小文件大小，但同时也牺牲了一定的音频质量。常见的有损音乐格式包括：
+[&amp;hellip;] Opus 是一个开放、免费、通用的有损音频编解码器。Opus 整合了以语音编码为导向的 SILK 和 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>MusiX</h1>
+
+
+<h3>XiaO / 
+2023-05-27</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h3 id="音频文件">音频文件</h3>
+<p>影响音频文件大小的因素包括：</p>
+<ul>
+<li>声道：指音频信号传输过程中所采用的通路数目，常见的有单声道和立体声两种，也有更多声道的多声道音频。</li>
+<li>采样率：采样率也称为采样速度或者采样频率，其定义了每秒从连续信号中提取并组成离散信号的采样个数，它用赫兹（Hz）来表示。采样率越高，音频质量越好，但文件大小也越大。</li>
+<li>采样深度：每次采样在记录时所使用的比特数。8 比特的采样深度 <code>$2^8 = 256$</code> 个不同的振幅， 16 比特有 <code>$2^{16} = 65536$</code> 个不同的振幅。在数字录音中，有越多不同的振幅，数字录音听起来就越接近原声，文件也更大。</li>
+<li>比特率（码率）：比特率是采样率、采样深度和声道数的简单乘积，即（每秒的样本采集数）x（在采集过程中每个样本的比特数）x （声道数）= 每秒比特数，缩写为 bps 或 kbps。比特率小于理论比特率的音频文件可能经过压缩，一般来说，比特率越低，压缩量越大，音质损失越大。但如果压缩算法的质量很高的话，会在保证合理的文件大小的同时，比较少的损失音频质量。</li>
+<li>格式：指音频文件的编码格式，常见的有 MP3, WAV, FLAC, AAC 等。不同的格式有不同的压缩算法和音频质量表现，对文件大小也有影响。</li>
+</ul>
+<p><strong>无损音乐</strong>格式一般指不会损失原始音频文件质量的音乐格式，常见的无损音乐格式包括：</p>
+<ul>
+<li>WAV（无损音频编码）：WAV 是一种非常常见的无损音频格式，最大特点是无压缩、音质好、文件大。</li>
+<li>FLAC（Free Lossless Audio Codec）：FLAC 是一种无损压缩音频格式，可无损压缩音频文件，压缩率大概在40%左右。</li>
+<li>APE（Monkey&rsquo;s Audio）：APE 是一种广泛使用的无损音频格式，但由于压缩率较大，因此解压时较耗费计算资源。</li>
+</ul>
+<p><strong>有损音乐</strong>格式是指通过有损压缩算法对音频信号进行处理，以减小文件大小，但同时也牺牲了一定的音频质量。常见的有损音乐格式包括：</p>
+<ul>
+<li>MP3 (MPEG Audio Layer III)：MP3 是一种流行的有损压缩音频格式，可以在不太影响质量的前提下将音频文件压缩到原始大小的1/10或更少。由于早期MP3文件的普及，所以 MP3 格式在音乐界广泛应用。</li>
+<li>AAC (Advanced Audio Coding)： AAC 同样是一种广泛应用的有损压缩音频格式，也是苹果公司主推的音频格式。相对于 MP3，它的音质更好，文件大小更小。</li>
+<li>OGG (Ogg Vorbis)：OGG 是一种自由软件基金会开发的音频格式，它的音质与 MP3 类似，但文件大小更小，压缩比更高。</li>
+<li>M4A (MPEG-4 Audio Layer)：M4A 是一种苹果公司开发的基于 MPEG-4 标准的音频格式，可以压缩无损音频编码，但通常用于压缩有损音频。</li>
+</ul>
+<h3 id="opus">OPUS</h3>
+<p>Opus 是一个开放、免费、通用的有损音频编解码器。Opus 整合了以语音编码为导向的 SILK 和超低延迟的 CELT，使其既适宜于存储和流媒体应用，又适宜于互联网上的交互式音频传输。</p>
+<p>Opus 已被主流互联网浏览器、Spotify、Netflix、YouTube 和其他流媒体服务采用。 Windows、iOS 和 Android 也支持 Opus。 Opus 的性能优于所有其它有损音频编解码器。</p>
+<ul>
+<li>6 kbps 到 510 kbps 的比特率；单一频道最高 256 kbps</li>
+<li>采样率从 8 kHz（窄带）到 48 kHz（全频）</li>
+<li>帧大小从 2.5 毫秒到 60 毫秒（较小的帧大小提供了低延迟，适用于实时传输）</li>
+<li>支持恒定比特率（CBR）、受约束比特率（CVBR）和可变比特率（VBR）</li>
+<li>支持语音（SILK 层）和音乐（CELT 层）的单独或混合模式</li>
+<li>支持单声道和立体声；支持多达 255 个音轨（多数据流的帧）</li>
+<li>可动态调节比特率，音频带宽和帧大小</li>
+<li>良好的损失稳健性和丢包隐蔽性（PLC）</li>
+<li>浮点和定点实现</li>
+</ul>
+<h3 id="opus-tools">Opus-tools</h3>
+<p>Opus-tools 是一套命令行工具集，用于编码、解码和操作 Opus 音频文件。这些工具提供多种功能，例如将音频文件转换为 Opus 格式、将 Opus 文件解码为各种音频格式、分析 Opus 文件等。</p>
+<p>Opus-tools 由几个独立的工具组成：</p>
+<ul>
+<li><a href="https://www.opus-codec.org/docs/opus-tools/opusenc.html">opusenc</a>：用于将音频文件编码为 Opus 格式</li>
+<li><a href="https://www.opus-codec.org/docs/opus-tools/opusdec.html">opusdec</a>：用于将 Opus 文件解码为各种音频格式</li>
+<li><a href="https://www.opus-codec.org/docs/opus-tools/opusinfo.html">opusinfo</a>：用于获取有关 Opus 文件和流的信息</li>
+</ul>
+<p>Opus-tools 对于在命令行操作和分析 Opus 文件非常有用，无需使用图形界面或专用音频编辑器。它们是开源的，并在 BSD 许可证下免费提供。</p>
+<p>安装：</p>
+<pre tabindex="0"><code>brew install opus-tools
+</code></pre><p>设置 Automator work flow 自动转换音频文件：</p>
+<ul>
+<li>检测是否含有 cover image (jpg 或 png)</li>
+<li>转换为比特率为 192 kbps 的 opus 文件（关于比特率的具体数值设置，可<a href="https://wiki.xiph.org/Opus_Recommended_Settings">参考此处</a>。在数据压缩和心理声学中，透明度（<a href="https://en.wikipedia.org/wiki/Transparency_(data_compression)">Transparency</a>）是有损数据压缩的结果，其精确度足以使压缩结果与未压缩输入在感知上无法区分，即感知上无损。）</li>
+</ul>
+<pre tabindex="0"><code>export PATH=/usr/local/bin:$PATH
+
+for f in &#34;$@&#34;
+do
+  file_path=${f%/*}
+  file=$(basename $f)
+  file_name=${file%.*}
+  opus_file=&#34;$file_path/$file_name.opus&#34;
+  
+  
+  if [ -f &#34;$file_path/cover.jpg&#34; ]; then
+    cover_path=&#34;$file_path/cover.jpg&#34;
+  elif [ -f &#34;$file_path/cover.png&#34; ]; then
+    cover_path=&#34;$file_path/cover.png&#34;
+  else
+    cover_path=&#34;&#34;
+  fi
+  
+  if [ -n &#34;$cover_path&#34; ]; then
+    opusenc --bitrate 192 --picture &#34;$cover_path&#34; &#34;$f&#34; &#34;$opus_file&#34;
+  else
+    opusenc --bitrate 192 &#34;$f&#34; &#34;$opus_file&#34;
+  fi
+done
+
+if [ -n &#34;$file_path&#34; ]; then
+  open $file_path
+fi
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2023-05-11/tiktok-download/">抖音批量下载</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2023-05-11\/tiktok-download\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2023</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.urz.one/cn/2023-05-27/musix/</loc>
+    <lastmod>2023-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/opus/</loc>
+    <lastmod>2023-05-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.urz.one/tags/</loc>
-    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.urz.one/tags/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD/</loc>
     <lastmod>2023-05-11T00:00:00+00:00</lastmod>
