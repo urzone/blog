@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>2 UTF-8 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="2 UTF-8 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="文本文件有多种编码格式，常见如下：
+[&amp;hellip;] UTF-8、UTF-16 和 UTF-32 的区别：
+[&amp;hellip;] 如果文件使用的编码格式与打开文件所用工具的编码格式不匹配，就会导致乱码。确保使用正确的编码格式打开文件。
+在实践中，通常可以通过编码转换工具将文本文件的编码格式进行转换。然而，需要注意的是，转换过程中可能会出现一些字符无法准确表示的问题，因为不同编码之间的字符映射并 &amp;hellip;">
+      <meta property="og:description" content="文本文件有多种编码格式，常见如下：
+[&amp;hellip;] UTF-8、UTF-16 和 UTF-32 的区别：
+[&amp;hellip;] 如果文件使用的编码格式与打开文件所用工具的编码格式不匹配，就会导致乱码。确保使用正确的编码格式打开文件。
+在实践中，通常可以通过编码转换工具将文本文件的编码格式进行转换。然而，需要注意的是，转换过程中可能会出现一些字符无法准确表示的问题，因为不同编码之间的字符映射并 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>2 UTF-8</h1>
+
+
+<h3>XiaO / 
+2023-06-01</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h3 id="编码">编码</h3>
+<p>文本文件有多种编码格式，常见如下：</p>
+<ul>
+<li>ASCII：ASCII（American Standard Code for Information Interchange）是最早的字符编码标准，使用 7 位表示 128 个字符。</li>
+<li>UTF-8：UTF-8（Unicode Transformation Format-8）是<strong>一种通用的 Unicode 字符编码，使用可变长度编码，支持全球范围内的字符</strong>。</li>
+<li>UTF-16：UTF-16（Unicode Transformation Format-16）是一种 Unicode 字符编码，使用 16 位编码表示字符。</li>
+<li>UTF-32：UTF-32（Unicode Transformation Format-32）是一种 Unicode 字符编码，使用 32位 编码表示字符。</li>
+<li>GB2312：GB2312 是早期的简体中文字符编码标准，后来被 GBK 所取代。</li>
+<li>GBK：GBK（GuoBiao-KuoZhan）是中文编码标准之一，支持简体中文和繁体中文字符。</li>
+<li>Big5：Big5 是台湾中文编码标准，用于繁体中文字符。</li>
+<li>ISO-8859-1：ISO-8859-1，也称为 Latin-1，是 ISO 制定的西欧字符编码标准。
+Shift_JIS：Shift_JIS 是一种日文字符编码标准，常用于日本。</li>
+</ul>
+<p>UTF-8、UTF-16 和 UTF-32 的区别：</p>
+<ul>
+<li>存储方式：UTF-8 是一种变长编码，使用 1 到 4 个字节来表示不同的 Unicode 字符。UTF-16 使用 16 位（2 个字节）来存储大部分常见字符，对于较少使用的字符使用双字节或四字节表示。UTF-32 则使用 32 位（4 个字节）来存储每个 Unicode 字符，无论其常见性。</li>
+<li>字符表示范围：UTF-8 可以表示 Unicode 字符集中的所有字符，包括常见字符和罕见字符。UTF-16 与 UTF-32 同样可以表示 Unicode 字符集中的所有字符。</li>
+<li>存储空间：由于 UTF-8 是变长编码，对于包含大量 ASCII 字符的文本，UTF-8 相对于 UTF-16 和 UTF-32 可以更节省存储空间。UTF-16 对于大部分常见字符来说相对节省存储空间，但对于罕见字符可能占用更多空间。UTF-32 则在存储空间上通常比 UTF-8 和 UTF-16 更占用空间。
+兼容性：UTF-8 是互联网上最常用的 Unicode 编码，因为它兼容 ASCII 编码，可以在不引起冲突的情况下逐步采用。UTF-16 在一些平台和应用程序中被广泛使用，如 Windows 系统和 Java 编程语言。UTF-32 主要在某些特定应用中使用，如操作系统内核或特定计算环境。</li>
+</ul>
+<h3 id="乱码">乱码</h3>
+<p>如果文件使用的编码格式与打开文件所用工具的编码格式不匹配，就会导致乱码。确保使用正确的编码格式打开文件。</p>
+<p>在实践中，通常可以通过编码转换工具将文本文件的编码格式进行转换。然而，需要注意的是，转换过程中可能会出现一些字符无法准确表示的问题，因为不同编码之间的字符映射并非完全相同。因此，在转换编码时，应确保目标编码能够正确表示源文本中的所有字符。</p>
+<h3 id="转码">转码</h3>
+<p>文件编码自动识别工具 <a href="https://github.com/BYVoid/uchardet">uchardet</a> 是一个编码检测库，它可以对没有附加信息的未知字符编码的字节序列进行处理，并试图确定文本的编码。返回的编码名称与 iconv 兼容。</p>
+<p>安装 uchardet：</p>
+<pre tabindex="0"><code>brew install uchardet
+</code></pre><p>使用 Automator 创建如下脚本，其功能是将指定的文件进行备份，并创建一个编码格式为 UTF-8 的与原文件同名的文件。</p>
+<pre tabindex="0"><code>export PATH=/usr/local/bin:$PATH
+
+for f in &#34;$@&#34;; do
+  file_path=$(dirname &#34;$f&#34;)
+  file=$(basename &#34;$f&#34;)
+  file_name=&#34;${file%.*}&#34;
+  ext=&#34;${file##*.}&#34;
+
+  supported_ext=(&#34;txt&#34; &#34;md&#34; &#34;lrc&#34; &#34;sub&#34; &#34;srt&#34;) # add other file extensions here
+
+  if [[ &#34; ${supported_ext[@]} &#34; =~ &#34; ${ext} &#34; ]]; then
+    cp &#34;$f&#34; &#34;$file_path/${file_name}_backup.$ext&#34; # Create a backup of the original file
+
+    encoding=$(uchardet &#34;$f&#34;) # Detect the original encoding
+    iconv -f &#34;$encoding&#34; -t UTF-8 &#34;$f&#34; &gt; &#34;$file_path/$file_name.tmp.$ext&#34; &amp;&amp; mv &#34;$file_path/$file_name.tmp.$ext&#34; &#34;$file_path/$file_name.$ext&#34; # Convert to UTF-8 and save with the same name
+  else
+    echo &#34;File extension is not supported for conversion: $ext&#34;
+  fi
+done
+</code></pre><ul>
+<li>打开 Automator 应用程序。</li>
+<li>创建一个新的工作流（Workflow）。</li>
+<li>在左侧的操作库中，选择 Utilities（实用工具）类别。</li>
+<li>在操作库中，拖动并放置 &ldquo;Run Shell Script&rdquo;（运行 Shell 脚本）操作到右侧的工作流区域。</li>
+<li>将代码粘贴到 Shell 脚本操作的脚本区域中。</li>
+<li>根据需要，可以修改脚本中的 supported_ext 数组，添加或删除需要支持的文件扩展名。</li>
+<li>保存工作流，并为其命名（例如，&ldquo;Convert to UTF-8&rdquo;）。
+现在，即可以将要转换的文件拖放到工作流中，或使用 &ldquo;Get Specified Finder Items&rdquo;（获取指定的 Finder 项目）操作来选择要转换的文件。</li>
+<li>运行工作流，它将按照脚本中的逻辑进行文件转换和备份。</li>
+<li>通过该工作流，即可在 Automator 中方便地进行文件的编码转换和备份操作。</li>
+</ul>
+<p>当然了，对于个别无关紧要的文件，也可以使用<a href="https://it365.gitlab.io/zh-cn/decode/?81206z">在线编码转换工具</a>，简单粗暴但解决问题。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2023-05-27/musix/">MusiX</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2023-05-27\/musix\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2023</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

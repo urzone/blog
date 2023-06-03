@@ -16,13 +16,15 @@
     
       
       <meta property="description" content="
-[&amp;hellip;] 为安装 PyMol 添加一些依赖程序
-brew install Caskroom/cask/xquartz brew install tcl-tk brew install python3 安装 PyMol (Homebrew version 2.3)
-brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4) &amp;hellip;">
+[&amp;hellip;] 使用 Homebrew 安装 PyMol 2.5
+brew install pymol 在终端启动 PyMol
+pymol 为 PyMol 添加图形启动界面
+* Step 1: Open the `Automator` app. Create a new document and select &amp;#34;Application&amp;#34;; * Step 2: Left &amp;hellip;">
       <meta property="og:description" content="
-[&amp;hellip;] 为安装 PyMol 添加一些依赖程序
-brew install Caskroom/cask/xquartz brew install tcl-tk brew install python3 安装 PyMol (Homebrew version 2.3)
-brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4) &amp;hellip;">
+[&amp;hellip;] 使用 Homebrew 安装 PyMol 2.5
+brew install pymol 在终端启动 PyMol
+pymol 为 PyMol 添加图形启动界面
+* Step 1: Open the `Automator` app. Create a new document and select &amp;#34;Application&amp;#34;; * Step 2: Left &amp;hellip;">
       
     
 
@@ -114,28 +116,12 @@ brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4) &am
 
 
 <p><img src="/media/image/cn-2020-05-13-pymol-01.png" alt=""></p>
-<h3 id="用-homebrew-在-macos-catalina-下-安装httpsgithubmolgenmpgdempibr-bioinformaticspymol-install开源版-pymol">用 Homebrew 在 MacOS Catalina 下 <a href="https://github.molgen.mpg.de/MPIBR-Bioinformatics/pymol-install">安装</a>开源版 PyMol</h3>
-<p>为安装 PyMol 添加一些依赖程序</p>
-<pre tabindex="0"><code>brew install Caskroom/cask/xquartz
-brew install tcl-tk
-brew install python3
-</code></pre><p>安装 PyMol (Homebrew version 2.3)</p>
-<pre tabindex="0"><code>brew install brewsci/bio/pymol
-</code></pre><p>安装 PyMol (<a href="https://qiita.com/Ag_smith/items/58e917710c4eddab46ee">源码本地编译 version 2.4</a>)</p>
-<pre tabindex="0"><code>＃ 如果您使用的是较旧版本的 pymol，请先使用 brew uninstall pymol 卸载它
-brew uninstall
-
-brew install wget
-brew tap brewsci/bio
-cd ~/Desktop
-
-＃下载 pymol 2.4 配方
-wget https://raw.githubusercontent.com/YoshitakaMo/homebrew-bio/develop/Formula/pymol.rb
-
-brew install --build-from-source ~/Desktop/pymol.rb
-</code></pre><p>启动 pymol</p>
+<h3 id="安装-pymol">安装 PyMol</h3>
+<p>使用 Homebrew 安装 PyMol 2.5</p>
+<pre tabindex="0"><code>brew install pymol
+</code></pre><p>在终端启动 PyMol</p>
 <pre tabindex="0"><code>pymol
-</code></pre><p>添加图形界面</p>
+</code></pre><p>为 PyMol 添加图形启动界面</p>
 <pre tabindex="0"><code>* Step 1: Open the `Automator` app. Create a new document and select &#34;Application&#34;;
 * Step 2: Left under &#34;Actions Library&#34; select &#34;Utilities&#34; and &#34;Run Shell Script&#34;;
 * Step 3: Choose &#34;/bin/bash&#34; as a shell;
@@ -174,28 +160,30 @@ brew install --build-from-source ~/Desktop/pymol.rb
 </li>
 </ul>
 <p><img src="/media/image/cn-2020-05-13-pymol-02.png" alt=""></p>
-<h3 id="pymol-透明背景设置以及球棍模型">PyMol 透明背景设置以及球棍模型</h3>
-<p>设置透明背景</p>
-<pre tabindex="0"><code>set ray_opaque_background, off
-</code></pre><p>是否显示球棍模型</p>
-<pre tabindex="0"><code>set stick_radius,0.15
-set sphere_scale,0.2
-</code></pre><p>是否显示双键</p>
-<pre tabindex="0"><code>set valence, 0 # off
-set valence, 1 # on
-</code></pre><p>双键显示模式</p>
-<pre tabindex="0"><code>set valence_mode, 0 # centered
-set valence_mode, 1 # inside
-</code></pre><p>设置双键的间距</p>
-<pre tabindex="0"><code>set valence_size, 0.1 # default: 0.06 # range 0 - ~0.5
+<h3 id="pymol-设置球棍模型">PyMol 设置球棍模型</h3>
+<pre tabindex="0"><code>set stick_ball, off # 关闭其自带的球棍模型
+set ray_opaque_background, off # 设置透明背景
+show sticks # 显示球棍模型的棍
+show spheres # 显示球棍模型的球
+
+set stick_radius,0.15 # 设置棍的半径
+set sphere_scale,0.2 # 设置球的缩放比例
+
+set valence, on # 显示双键
+set valence_mode, 0 # 双键显示模式，0 中心；1 内部
+set valence_size, 0.1 # 双键的距离 default: 0.06 range 0 - ~0.5 
 </code></pre><p><strong>最终统一设置如下</strong></p>
-<pre tabindex="0"><code>set ray_opaque_background, off
-set valence, 1
-set valence_mode, 0
-set valence_size, 0.1
-set stick_radius,0.15
-set sphere_scale,0.2
-</code></pre><h3 id="高分辨率图片输出">高分辨率图片输出</h3>
+<pre tabindex="0"><code>set stick_ball, off
+set ray_opaque_background, off
+show sticks
+show spheres
+set stick_radius,0.15 
+set sphere_scale,0.2 
+set valence, on
+set valence_mode, 0 
+set valence_size, 0.1 
+</code></pre><p>PyMol 所有的设置都可以在 Setting &mdash;&gt; Edit All&hellip; 中找到并进行编辑。</p>
+<h3 id="高分辨率图片输出">高分辨率图片输出</h3>
 <pre tabindex="0"><code>png filename[, width[, height[, dpi[, ray[, quiet]]]]]
 </code></pre><p>例如，保存图片为 <code>test.png</code> 到 <code>~/Library/Mobile Documents/com~apple~CloudDocs/Science/DSDS/Molecular 3D Structures/</code> 文件夹，设置宽度为 <code>10 in</code>，分辨率为 <code>600 dpi</code>。</p>
 <pre tabindex="0"><code>png ~/Library/Mobile Documents/com~apple~CloudDocs/Science/DSDS/Molecular 3D Structures/test.png, width=10 in, dpi=600, ray=1

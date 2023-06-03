@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>txt on XiaO | 缄默之语</title>
+    <link>https://blog.urz.one/tags/txt/</link>
+    <description>Recent content in txt on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/txt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2 UTF-8</title>
+      <link>https://blog.urz.one/cn/2023-06-01/2-utf-8/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-06-01/2-utf-8/</guid>
+      <description>编码 文本文件有多种编码格式，常见如下： ASCII：ASCII（American Standard Code for Information Interchange）是最早的字符编码标准，使用 7 位</description>
+    </item>
+    
+  </channel>
+</rss>
