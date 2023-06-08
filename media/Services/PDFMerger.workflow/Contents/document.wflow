@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>492</string>
+	<key>AMApplicationVersion</key>
+	<string>2.10</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>#! /usr/bin/python
+# coding=utf-8
+#
+# JOINPDFS v2.2 : Tool to concatenate PDFs.
+# New tool built from the ground up using PDFKit, instead of Core Graphics.
+# Now writes Table of Contents for each file added. (importing existing ToCs!)
+# by Ben Byram-Wigfield
+
+import sys
+import os.path
+from CoreFoundation import (CFURLCreateFromFileSystemRepresentation, kCFAllocatorDefault, NSURL, NSString)
+import Quartz as Quartz
+
+def createPDFDocumentWithPath(path):
+    pdfURL = NSURL.fileURLWithPath_(path)
+    if pdfURL:
+        return Quartz.PDFDocument.alloc().initWithURL_(pdfURL)
+
+def getFilename(filepath, basename):
+    fullname = basename + ".pdf"
+    i=0
+    while os.path.exists(os.path.join(filepath, fullname)):
+        i += 1
+        fullname = basename + " %02d.pdf"%i
+    return os.path.join(filepath, fullname)
+
+
+def getOutline(page, label, pageObject):
+    pageSize = pageObject.boundsForBox_(Quartz.kCGPDFMediaBox)
+    x = 0
+    y = Quartz.CGRectGetHeight(pageSize)
+    pagePoint = Quartz.CGPointMake(x,y-1)
+    myDestination = Quartz.PDFDestination.alloc().initWithPage_atPoint_(pageObject, pagePoint)
+    myLabel = NSString.stringWithString_(label)
+    myOutline = Quartz.PDFOutline.alloc().init()
+    myOutline.setLabel_(myLabel)
+    myOutline.setDestination_(myDestination)
+    return myOutline
+
+def join(incomingFiles):
+
+    # Set the output file location and name.
+    prefix = os.path.dirname(incomingFiles[0])
+    filename = "Combined"
+    outfile = getFilename(prefix, filename)
+    # Load in the first PDF file, to which the rest will be added.
+    firstPDF = createPDFDocumentWithPath(incomingFiles[0])
+    outlineIndex = 0
+    rootOutline = Quartz.PDFOutline.alloc().init()
+    firstLabel = os.path.basename(incomingFiles[0])
+    firstPage = firstPDF.pageAtIndex_(0)
+    firstOutline = getOutline(0, firstLabel, firstPage)
+    # Check and copy existing Outlines into new structure.
+    existingOutline = firstPDF.outlineRoot()
+    if existingOutline:
+        i=0
+        while i &lt; (existingOutline.numberOfChildren()):
+            childOutline = existingOutline.childAtIndex_(i)
+            firstOutline.insertChild_atIndex_(childOutline, i)
+            i +=1
+    rootOutline.insertChild_atIndex_(firstOutline, outlineIndex)
+
+    
+    # create PDFDocument object for the remaining files.
+    pdfObjects = map(createPDFDocumentWithPath, incomingFiles[1:])
+    for index, doc in enumerate(pdfObjects):
+        if doc: 
+            pages = doc.pageCount()
+            pageIndex = firstPDF.pageCount()
+            tocLabel = os.path.basename(incomingFiles[index+1])
+            for p in range(0, pages):
+                page = doc.pageAtIndex_(p)
+                firstPDF.insertPage_atIndex_(page, pageIndex+p)
+                if p == 0:
+                    outline = getOutline(pageIndex, tocLabel, page)
+                    existingOutline = doc.outlineRoot()
+                    if existingOutline:
+                        i=0
+                        while i &lt; (existingOutline.numberOfChildren()):
+                            childOutline = existingOutline.childAtIndex_(i)
+                            outline.insertChild_atIndex_(childOutline, i)
+                            i +=1
+                        
+            rootOutline.insertChild_atIndex_(outline, index+1)
+    # Add the root Outline to the first PDF.
+    firstPDF.setOutlineRoot_(rootOutline)               
+    firstPDF.writeToFile_(outfile)          
+
+if __name__ == "__main__":
+    if len(sys.argv) &gt; 1:
+        join(sys.argv[1:])</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>1</integer>
+					<key>shell</key>
+					<string>/usr/bin/python</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>543A82EA-BC98-4C9A-8C58-A9FC1FB4A0F5</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>ABE6926E-D082-4B2C-B32C-7E7348E8E1A0</string>
+				<key>UUID</key>
+				<string>2B79A92E-6173-49B1-A253-46B02A8E249E</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>438.500000:616.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict/>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>applicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>applicationBundleIDsByPath</key>
+		<dict>
+			<key>/System/Library/CoreServices/Finder.app</key>
+			<string>com.apple.finder</string>
+		</dict>
+		<key>applicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>applicationPaths</key>
+		<array>
+			<string>/System/Library/CoreServices/Finder.app</string>
+		</array>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.PDF</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
+		<key>serviceApplicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>serviceApplicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.PDF</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSActionTemplate</string>
+		<key>useAutomaticInputType</key>
+		<integer>0</integer>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.servicesMenu</string>
+	</dict>
+</dict>
+</plist>

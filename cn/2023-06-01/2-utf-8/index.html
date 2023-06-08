@@ -140,7 +140,7 @@ Shift_JIS：Shift_JIS 是一种日文字符编码标准，常用于日本。</li
 <p>文件编码自动识别工具 <a href="https://github.com/BYVoid/uchardet">uchardet</a> 是一个编码检测库，它可以对没有附加信息的未知字符编码的字节序列进行处理，并试图确定文本的编码。返回的编码名称与 iconv 兼容。</p>
 <p>安装 uchardet：</p>
 <pre tabindex="0"><code>brew install uchardet
-</code></pre><p>使用 Automator 创建如下脚本，其功能是将指定的文件进行备份，并创建一个编码格式为 UTF-8 的与原文件同名的文件。</p>
+</code></pre><p>使用 Automator 创建如下脚本：</p>
 <pre tabindex="0"><code>export PATH=/usr/local/bin:$PATH
 
 for f in &#34;$@&#34;; do
@@ -149,29 +149,16 @@ for f in &#34;$@&#34;; do
   file_name=&#34;${file%.*}&#34;
   ext=&#34;${file##*.}&#34;
 
-  supported_ext=(&#34;txt&#34; &#34;md&#34; &#34;lrc&#34; &#34;sub&#34; &#34;srt&#34;) # add other file extensions here
+  supported_ext=(&#34;txt&#34; &#34;md&#34; &#34;lrc&#34; &#34;sub&#34; &#34;srt&#34; &#34;log&#34; &#34;cue&#34;) # add other file extensions here
 
   if [[ &#34; ${supported_ext[@]} &#34; =~ &#34; ${ext} &#34; ]]; then
-    cp &#34;$f&#34; &#34;$file_path/${file_name}_backup.$ext&#34; # Create a backup of the original file
-
     encoding=$(uchardet &#34;$f&#34;) # Detect the original encoding
     iconv -f &#34;$encoding&#34; -t UTF-8 &#34;$f&#34; &gt; &#34;$file_path/$file_name.tmp.$ext&#34; &amp;&amp; mv &#34;$file_path/$file_name.tmp.$ext&#34; &#34;$file_path/$file_name.$ext&#34; # Convert to UTF-8 and save with the same name
   else
     echo &#34;File extension is not supported for conversion: $ext&#34;
   fi
 done
-</code></pre><ul>
-<li>打开 Automator 应用程序。</li>
-<li>创建一个新的工作流（Workflow）。</li>
-<li>在左侧的操作库中，选择 Utilities（实用工具）类别。</li>
-<li>在操作库中，拖动并放置 &ldquo;Run Shell Script&rdquo;（运行 Shell 脚本）操作到右侧的工作流区域。</li>
-<li>将代码粘贴到 Shell 脚本操作的脚本区域中。</li>
-<li>根据需要，可以修改脚本中的 supported_ext 数组，添加或删除需要支持的文件扩展名。</li>
-<li>保存工作流，并为其命名（例如，&ldquo;Convert to UTF-8&rdquo;）。
-现在，即可以将要转换的文件拖放到工作流中，或使用 &ldquo;Get Specified Finder Items&rdquo;（获取指定的 Finder 项目）操作来选择要转换的文件。</li>
-<li>运行工作流，它将按照脚本中的逻辑进行文件转换和备份。</li>
-<li>通过该工作流，即可在 Automator 中方便地进行文件的编码转换和备份操作。</li>
-</ul>
+</code></pre><p>下载并安装<a href="/media/Services/2UTF8.workflow">该 Workflow</a>，即可使用。</p>
 <p>当然了，对于个别无关紧要的文件，也可以使用<a href="https://it365.gitlab.io/zh-cn/decode/?81206z">在线编码转换工具</a>，简单粗暴但解决问题。</p>
 
 
@@ -179,7 +166,7 @@ done
   
 <nav class="post-nav">
   <span class="nav-prev">&larr; <a href="/cn/2023-05-27/musix/">MusiX</a></span>
-  <span class="nav-next"></span>
+  <span class="nav-next"><a href="/cn/2023-06-03/source/">资源不限速</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -190,6 +177,8 @@ document.addEventListener('keyup', function(e) {
     url = '\/cn\/2023-05-27\/musix\/';
     
   } else if (e.which == 39) {  
+    
+    url = '\/cn\/2023-06-03\/source\/';
     
   }
   if (url) window.location = url;

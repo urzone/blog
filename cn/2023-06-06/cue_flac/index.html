@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>CUE 引导的音频分轨 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="CUE 引导的音频分轨 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="CUE 文件是一种用于描述数据结构和数据验证规则的配置文件格式，本质上依旧是一个文本文件，所以，有可能同样遇到编码问题。即，如果文件使用的编码格式与打开文件所用工具的编码格式不匹配，就会导致乱码。所以，应先使用编码转换工具对该 cue 文件的编码格式进行转码，防止乱码产生。
+对该文件进行编码转换以后，可用任一文本编辑工具打开该文件，对所述部分进行编辑。
+[&amp;hellip;] &amp;hellip;">
+      <meta property="og:description" content="CUE 文件是一种用于描述数据结构和数据验证规则的配置文件格式，本质上依旧是一个文本文件，所以，有可能同样遇到编码问题。即，如果文件使用的编码格式与打开文件所用工具的编码格式不匹配，就会导致乱码。所以，应先使用编码转换工具对该 cue 文件的编码格式进行转码，防止乱码产生。
+对该文件进行编码转换以后，可用任一文本编辑工具打开该文件，对所述部分进行编辑。
+[&amp;hellip;] &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>CUE 引导的音频分轨</h1>
+
+
+<h3>XiaO / 
+2023-06-06</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h3 id="cue-文件编码">CUE 文件编码</h3>
+<p>CUE 文件是一种用于描述数据结构和数据验证规则的配置文件格式，本质上依旧是一个文本文件，所以，有可能同样遇到编码问题。即，如果文件使用的编码格式与打开文件所用工具的编码格式不匹配，就会导致乱码。所以，应先使用<a href="/cn/2023-06-01/2-utf-8/">编码转换工具</a>对该 cue 文件的编码格式进行转码，防止乱码产生。</p>
+<p>对该文件进行编码转换以后，可用任一文本编辑工具打开该文件，对所述部分进行编辑。</p>
+<h3 id="shntool-分轨">shntool 分轨</h3>
+<p>安装 <a href="http://shnutils.freeshell.org/shntool/">shntool</a>，shntool 的<a href="http://shnutils.freeshell.org/shntool/support/doc/shntool.txt">使用说明</a>：</p>
+<pre tabindex="0"><code>brew install shntool ffmpeg
+</code></pre><p>在 Automator 的 Workflow 中添加如下脚本，以便快捷转换。
+该脚本将音频文件转换为 flac 格式，而后使用 shntool 对 flac 文件 进行分割，将分割后的文件存储于原文件夹中。</p>
+<pre tabindex="0"><code>#!/bin/bash
+
+export PATH=&#34;/usr/local/bin:$PATH&#34;
+
+for f in &#34;$@&#34;
+do
+  file_path=${f%/*}
+  file=$(basename &#34;$f&#34;)
+  file_name=${file%.*}
+  file_extension=${file##*.}
+
+  # Changes the current directory to the directory where the input file is located using cd &#34;$file_path&#34;
+  cd &#34;$file_path&#34; || exit 1
+
+  if [[ &#34;$file_extension&#34; == &#34;ape&#34; ]]; then
+    # Convert APE to FLAC
+    ffmpeg -i &#34;${file_name}.ape&#34; &#34;${file_name}.flac&#34;
+    input_file=&#34;${file_name}.flac&#34;
+  else
+    input_file=&#34;$f&#34;
+  fi
+
+
+  # Split the input file into tracks
+  shnsplit -f &#34;${file_name}.cue&#34; -t &#34;%t&#34; &#34;$input_file&#34;
+  # Return to the previous working directory
+  cd - || exit 1
+done
+
+if [ -n &#34;$file_path&#34; ]; then
+  open &#34;$file_path&#34;
+fi
+</code></pre><p>具体的命令参数可参见如下，进行修改。</p>
+<pre tabindex="0"><code>-t fmt Name output files in user-specified format based  on  CUE  sheet
+              fields.  The following formatting strings are recognized:
+              %p     Performer
+
+              %a     Album
+
+              %t     Track title
+
+              %n     Track number
+
+-f file Specifies  a  file  from which to read split point data.  If not given, then split points are read from the terminal.
+-o str Specify  output file format extension, encoder and/or arguments.
+</code></pre><p>下载安装<a href="/media/Services/AudioSplitter.workflow">该 Workflow</a>，即可在服务中使用。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2023-06-03/source/">资源不限速</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2023-06-03\/source\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2023</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
