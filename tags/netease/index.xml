@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netease on XiaO | 缄默之语</title>
+    <link>https://blog.urz.one/tags/netease/</link>
+    <description>Recent content in Netease on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/netease/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>祖传歌单迁移</title>
+      <link>https://blog.urz.one/cn/2023-06-10/netease-music-list-export/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-06-10/netease-music-list-export/</guid>
+      <description>作为数字游民，想要将祖传歌单迁移至不同的平台，譬如，从网易或者企鹅迁移至油管或者绿兜，拢共分两步，虽然这比将大象装进冰箱所需的步骤还少一步，</description>
+    </item>
+    
+  </channel>
+</rss>

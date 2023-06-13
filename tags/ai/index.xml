@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on XiaO | 缄默之语</title>
+    <link>https://blog.urz.one/tags/ai/</link>
+    <description>Recent content in AI on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人工智能与工业革命</title>
+      <link>https://blog.urz.one/cn/2023-06-13/ai-and-industry/</link>
+      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-06-13/ai-and-industry/</guid>
+      <description>老蛮频道关于现在 AI 技术的看法，其直接的结论是：现在的 AI 技术，天花板十分明显，它根本无法推动第四次工业革命的到来。 第一次和第二次技术革命，都是</description>
+    </item>
+    
+  </channel>
+</rss>

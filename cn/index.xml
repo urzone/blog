@@ -8,6 +8,42 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>人工智能与工业革命</title>
+      <link>https://blog.urz.one/cn/2023-06-13/ai-and-industry/</link>
+      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-06-13/ai-and-industry/</guid>
+      <description>老蛮频道关于现在 AI 技术的看法，其直接的结论是：现在的 AI 技术，天花板十分明显，它根本无法推动第四次工业革命的到来。 第一次和第二次技术革命，都是</description>
+    </item>
+    
+    <item>
+      <title>现在经济形势到底好还是不好？</title>
+      <link>https://blog.urz.one/cn/2023-06-13/the-current-economy-trend/</link>
+      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-06-13/the-current-economy-trend/</guid>
+      <description>P 乎被夹的回答，使用谷哥缓存从坟堆里刨出来后，以做记录。其它回答还苟延残喘地挂在 P 乎上，不知道几时就被拉去坟场。 见微知著： 房地产公司从头部到</description>
+    </item>
+    
+    <item>
+      <title>祖传歌单迁移</title>
+      <link>https://blog.urz.one/cn/2023-06-10/netease-music-list-export/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-06-10/netease-music-list-export/</guid>
+      <description>作为数字游民，想要将祖传歌单迁移至不同的平台，譬如，从网易或者企鹅迁移至油管或者绿兜，拢共分两步，虽然这比将大象装进冰箱所需的步骤还少一步，</description>
+    </item>
+    
+    <item>
+      <title>维生素</title>
+      <link>https://blog.urz.one/cn/2023-06-10/vitamins/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-06-10/vitamins/</guid>
+      <description>维生素 B12 维生素 B12（Vitamin B12），溶于水。分子结构是以钴离子为中心的咕啉环和 5,6 - 二甲基苯并咪唑为碱基组成的核苷酸。分子量为 1355.37 g/</description>
+    </item>
+    
+    <item>
       <title>CUE 引导的音频分轨</title>
       <link>https://blog.urz.one/cn/2023-06-06/cue_flac/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
@@ -870,42 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2021-02-18/the-metro-2-spring/</guid>
       <description>开往春天的地铁，俗气却也贴切的名字，这确是一个冬去春来的时节。 地铁呼啸而过的瞬间，伫立着，脑海里一片空白。列车载走的似是一张张面孔，然而心底</description>
-    </item>
-    
-    <item>
-      <title>医药圈创业眷侣</title>
-      <link>https://blog.urz.one/cn/2021-02-14/couples-in-medicinal-industry/</link>
-      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2021-02-14/couples-in-medicinal-industry/</guid>
-      <description>医药圈一直不乏“夫妻携手创业”的神仙眷侣。往远处数有国内肝素钠原料药企业的创始人李锂和妻子李坦，智飞生物蒋仁生和结发妻子廖晓明；往近处说有孙</description>
-    </item>
-    
-    <item>
-      <title>pip 工具</title>
-      <link>https://blog.urz.one/cn/2021-02-11/pip-tool/</link>
-      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2021-02-11/pip-tool/</guid>
-      <description>pip 操作 pip 安装 python 包 pip install Somepackage1 Somepackage2 # 安装包 pip install --upgrade Somepackage1 Somepackage2 # 更新包 pip uninstall Somepackage1 Somepackage2 # 安装包 pip 对所有的安装包进行操作 alias pip-upgrade=&amp;#34;pip freeze --user | cut -d&amp;#39;=&amp;#39; -f1 | xargs -n1 pip install -U&amp;#34; # 设置 pip-upgrade 别名更新所有 pip</description>
-    </item>
-    
-    <item>
-      <title>macOS 系统降级</title>
-      <link>https://blog.urz.one/cn/2021-01-27/macos-downgrading/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2021-01-27/macos-downgrading/</guid>
-      <description>人总是在欲望中想着去尝试，而又每每在尝试后陷入后悔。这似乎是人性的弱点。 三种恢复系统的快捷键 通过 macOS 恢复功能启动：基于 Intel 处理器的 Mac 上，在 Mac 开机</description>
-    </item>
-    
-    <item>
-      <title>IPFS 构建去中心化网站</title>
-      <link>https://blog.urz.one/cn/2021-01-23/ipfs/</link>
-      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2021-01-23/ipfs/</guid>
-      <description>IPFS 简介 IPFS，又称“星际文件系统”。简单点说，它是一个点对点的分布式文件系统（和比特币技术一样），通过底层协议，可以让存储在 IPFS 系统上的文件</description>
     </item>
     
   </channel>
