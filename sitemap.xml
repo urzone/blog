@@ -2,10 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.urz.one/tags/ai/</loc>
-    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
+    <loc>https://blog.urz.one/tags/cryptomator/</loc>
+    <lastmod>2023-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/gh1b/</loc>
+    <lastmod>2023-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/macfuse/</loc>
+    <lastmod>2023-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/cn/2023-06-22/macfuse-for-cryptomator/</loc>
+    <lastmod>2023-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.urz.one/tags/</loc>
+    <lastmod>2023-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/node-version-manager/</loc>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/cn/2023-06-17/node-version-manager/</loc>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/nvm/</loc>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/honeycomb-briquette/</loc>
+    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/%E8%9C%82%E7%AA%9D%E7%85%A4/</loc>
+    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/cn/2023-06-16/honeycomb-briquette/</loc>
+    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.urz.one/tags/ai/</loc>
     <lastmod>2023-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.urz.one/cn/2023-06-13/ai-and-industry/</loc>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>macFUSE for Cryptomator - XiaO | 缄默之语</title>
+    <meta property="og:title" content="macFUSE for Cryptomator - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Cryptomator 解密早前加密的文件夹时，遇到如下错误：
+Error Code GH1B:GH1B:U0I5 org.cryptomator.integrations.mount.MountFailedException: Mounting failed at &amp;hellip;">
+      <meta property="og:description" content="Cryptomator 解密早前加密的文件夹时，遇到如下错误：
+Error Code GH1B:GH1B:U0I5 org.cryptomator.integrations.mount.MountFailedException: Mounting failed at &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>macFUSE for Cryptomator</h1>
+
+
+<h3>XiaO / 
+2023-06-22</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>Cryptomator 解密早前加密的文件夹时，遇到如下错误：</p>
+<pre tabindex="0"><code>Error Code GH1B:GH1B:U0I5
+org.cryptomator.integrations.mount.MountFailedException: Mounting failed
+	at org.cryptomator.frontend.webdav@2.0.3/org.cryptomator.frontend.webdav.mount.MacAppleScriptMounter$MountBuilderImpl.mount(MacAppleScriptMounter.java:111)
+	at org.cryptomator.frontend.webdav@2.0.3/org.cryptomator.frontend.webdav.mount.AbstractMountBuilder.mount(AbstractMountBuilder.java:88)
+	at org.cryptomator.desktop@1.9.1/org.cryptomator.common.mount.Mounter.mount(Mounter.java:134)
+	at org.cryptomator.desktop@1.9.1/org.cryptomator.common.vaults.Vault.unlock(Vault.java:150)
+	at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.keyloading.KeyLoadingStrategy.use(KeyLoadingStrategy.java:79)
+	at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.unlock.UnlockWorkflow.attemptUnlock(UnlockWorkflow.java:70)
+	at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.unlock.UnlockWorkflow.call(UnlockWorkflow.java:60)
+	at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.unlock.UnlockWorkflow.call(UnlockWorkflow.java:31)
+	at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Command failed with exit code 1. Expected 0.
+	at org.cryptomator.frontend.webdav@2.0.3/org.cryptomator.frontend.webdav.mount.ProcessUtil.assertExitValue(ProcessUtil.java:25)
+	at org.cryptomator.frontend.webdav@2.0.3/org.cryptomator.frontend.webdav.mount.MacAppleScriptMounter$MountBuilderImpl.mount(MacAppleScriptMounter.java:92)
+	... 14 more
+Caused by: java.io.IOException: Stderr output: 0:57: execution error: An error of type -5014 has occurred. (-5014)
+	at org.cryptomator.frontend.webdav@2.0.3/org.cryptomator.frontend.webdav.mount.ProcessUtil.assertExitValue(ProcessUtil.java:23)
+	... 15 more
+</code></pre><h3 id="为-cryptomator-选择正确的文件系统类型">为 Cryptomator 选择正确的文件系统类型</h3>
+<p>因为在使用 Cryptomator 创建虚拟加密硬盘时，虚拟硬盘是建立在外部移动硬盘上的，而外部移动硬盘采用的是 Mac 的 journal 格式。而 Cryptomator 解密时，使用的 Volume Type 是 WebDAV (AppleScript)，故而报错。</p>
+<p><a href="https://docs.cryptomator.org/en/latest/desktop/volume-type/#choosing-a-default-volume-type">修改</a>解密时默认的文件系统类型：Preferences &mdash;&gt; Virtual Drive &mdash;&gt; Volume Type: Automatic or macFUSE, 重启 Cryptomator，即可正确地挂载和解密之前加密的虚拟硬盘了。</p>
+<p>为什么这样修改就正常工作了呢？</p>
+<h3 id="macfusehttpsosxfusegithubio"><a href="https://osxfuse.github.io/">macFUSE</a></h3>
+<p>电脑操作系统的文件系统控制着文件的创建、存储、写入和读取方式。不同的操作系统如 Windows 或 macOS 的文件系统是不一样的。 <a href="https://digitalixy.com/apple/532116.html">macFUSE</a> 是一款允许 macOS 访问非 Mac 文件系统（如 NTFS）的软件，其使得 Mac 可以和其它文件系统交换文件。</p>
+<p>安装 macFUSE</p>
+<pre tabindex="0"><code>brew install macfuse
+</code></pre><p>如此，即可读取非 Mac 文件系统（如 NTFS）的文件了。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2023-06-17/node-version-manager/">Node Version Manager</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2023-06-17\/node-version-manager\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2023</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
