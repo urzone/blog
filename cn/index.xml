@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>吕祖灵签</title>
+      <link>https://blog.urz.one/cn/2023-07-22/the-oracle-of-lu-zu/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-07-22/the-oracle-of-lu-zu/</guid>
+      <description>【卦象】 古人合兵破曹 【签诗】 一个兔儿一个鸡，等全无不合人思； 有朝遇着东风力，且看天公造化机。 【解曰】 三国时刘备与孙权联合起来，在赤壁火烧连环</description>
+    </item>
+    
+    <item>
       <title>灰色人种之黄昏</title>
       <link>https://blog.urz.one/cn/2023-07-10/twilight-of-the-gray-race/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
@@ -897,15 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2021-03-23/tem-for-the-analysis-of-crystal-strucures/</guid>
       <description>X-射线单晶衍射技术（SXRD, Single crystalX-ray diffraction）和 X-射线粉末衍射技术（PXRD, Powder X-ray diffraction）经常被用于研究晶体</description>
-    </item>
-    
-    <item>
-      <title>TEM 样品制备</title>
-      <link>https://blog.urz.one/cn/2021-03-23/sample-preparation-for-tem/</link>
-      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2021-03-23/sample-preparation-for-tem/</guid>
-      <description>一、TEM 样品台结构 二、TEM 样品的要求 样品一般应为厚度小于 100nm 的固体。 感兴趣的区域与其它区域有反差。 样品在高真空中能保持稳定。 不含有水分或其</description>
     </item>
     
   </channel>
