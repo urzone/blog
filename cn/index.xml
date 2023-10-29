@@ -13,7 +13,7 @@
       <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.urz.one/cn/2023-10-28/integral/</guid>
-      <description>技巧性的记忆终究归于遗忘。或曰：唯手熟尔。 $$ \begin{align} \int\limits_{ -\infty }^{\infty }{\dfrac{1}{{x}^{2}+6x+10}}{\mathrm{d}x} \end{align} $$ The integral: $\int{\dfrac{1}{{x}^{2}+6\,x+10}}{\mathrm{d}x} \\\\ = \int{\dfrac{1}{\left({x+3}\right)^{2}+1}}{\mathrm{d}x} \\\\ = \int{\dfrac{1}{{u}^{2}+1}}{\mathrm{d}u}; (let: u = x+3) \\\\ =\arctan\left(u\right)+C \\\\ =\arctan\left(x+3\right)+C; (recall: u = x+3) \\\\$ Let: $F\left(x\right)=\arctan\left(x+3\right) \\\\ \lim_{b\to\infty}F\left(b\right)=\dfrac{\pi}{2} \\\\ \lim_{a\to-\infty}F\left(a\right)=-\dfrac{\pi}{2}\\\\$ Thus: $\int\limits_{ -\infty }^{\infty }{\dfrac{1}{{x}^{2}+6\,x+10}}{\mathrm{d}x} = \pi$ $$ \begin{align} \int\limits_{0}^{\infty }{\dfrac{3}{7\left({x}^{2}+1\right)}}{\mathrm{d}x} \end{align} $$</description>
+      <description>技巧性的记忆终究归于遗忘。或曰：唯手熟尔。 $$ \begin{align} \int\limits_{ -\infty }^{\infty }{\dfrac{1}{{x}^{2}+6x+10}}{\mathrm{d}x} \end{align} $$ The integral: $\int{\dfrac{1}{{x}^{2}+6x+10}}{\mathrm{d}x} \\\\ = \int{\dfrac{1}{\left({x+3}\right)^{2}+1}}{\mathrm{d}x} \\\\ = \int{\dfrac{1}{{u}^{2}+1}}{\mathrm{d}u}; (let: u = x+3) \\\\ =\arctan\left(u\right)+C \\\\ =\arctan\left(x+3\right)+C; (recall: u = x+3) \\\\$ Let: $F\left(x\right)=\arctan\left(x+3\right) \\\\ \lim_{b\to\infty}F\left(b\right)=\dfrac{\pi}{2} \\\\ \lim_{a\to-\infty}F\left(a\right)=-\dfrac{\pi}{2}\\\\$ Thus: $\int\limits_{ -\infty }^{\infty }{\dfrac{1}{{x}^{2}+6x+10}}{\mathrm{d}x} = \pi$ $$ \begin{align} \int\limits_{0}^{\infty }{\dfrac{3}{7\left({x}^{2}+1\right)}}{\mathrm{d}x} \end{align} $$</description>
     </item>
     
     <item>
