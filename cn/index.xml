@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Integral Calculation</title>
+      <link>https://blog.urz.one/cn/2023-10-28/integral/</link>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.urz.one/cn/2023-10-28/integral/</guid>
+      <description>技巧性的记忆终究归于遗忘。或曰：唯手熟尔。 $$ \begin{align} \int\limits_{ -\infty }^{\infty }{\dfrac{1}{{x}^{2}+6x+10}}{\mathrm{d}x} \end{align} $$ The integral: $\int{\dfrac{1}{{x}^{2}+6\,x+10}}{\mathrm{d}x} \\\\ = \int{\dfrac{1}{\left({x+3}\right)^{2}+1}}{\mathrm{d}x} \\\\ = \int{\dfrac{1}{{u}^{2}+1}}{\mathrm{d}u}; (let: u = x+3) \\\\ =\arctan\left(u\right)+C \\\\ =\arctan\left(x+3\right)+C; (recall: u = x+3) \\\\$ Let: $F\left(x\right)=\arctan\left(x+3\right) \\\\ \lim_{b\to\infty}F\left(b\right)=\dfrac{\pi}{2} \\\\ \lim_{a\to-\infty}F\left(a\right)=-\dfrac{\pi}{2}\\\\$ Thus: $\int\limits_{ -\infty }^{\infty }{\dfrac{1}{{x}^{2}+6\,x+10}}{\mathrm{d}x} = \pi$ $$ \begin{align} \int\limits_{0}^{\infty }{\dfrac{3}{7\left({x}^{2}+1\right)}}{\mathrm{d}x} \end{align} $$</description>
+    </item>
+    
+    <item>
       <title>吕祖灵签</title>
       <link>https://blog.urz.one/cn/2023-07-22/the-oracle-of-lu-zu/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
@@ -897,15 +906,6 @@ Lab scale: Initial experiments are conducted on a small scale, often using manua
       
       <guid>https://blog.urz.one/cn/2021-03-25/running-away-from-the-local-interlet/</guid>
       <description>网络出逃这件事情，其实是很累的。而我并没有觉得有什么可伤悲的，可能只是因为，已然习惯或者无力挣扎，犹如拖着断了的胳膊或腿依旧在前行，只剩下一</description>
-    </item>
-    
-    <item>
-      <title>TEM 晶体结构分析</title>
-      <link>https://blog.urz.one/cn/2021-03-23/tem-for-the-analysis-of-crystal-strucures/</link>
-      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.urz.one/cn/2021-03-23/tem-for-the-analysis-of-crystal-strucures/</guid>
-      <description>X-射线单晶衍射技术（SXRD, Single crystalX-ray diffraction）和 X-射线粉末衍射技术（PXRD, Powder X-ray diffraction）经常被用于研究晶体</description>
     </item>
     
   </channel>
