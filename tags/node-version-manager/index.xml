@@ -6,15 +6,14 @@
     <description>Recent content in node version manager on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/node-version-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/node-version-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Node Version Manager</title>
       <link>https://blog.urz.one/cn/2023-06-17/node-version-manager/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2023-06-17/node-version-manager/</guid>
       <description>虽然鄙人的老爷机依旧硬朗，然而被苹果请出重症监护室这件事，依旧导致了很多网友用爱发电的软件无法再更新了。而本地编译就像你要求八十岁老爷爷跑马</description>
     </item>
-    
   </channel>
 </rss>

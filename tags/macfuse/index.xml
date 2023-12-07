@@ -6,15 +6,14 @@
     <description>Recent content in macFUSE on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Thu, 22 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/macfuse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/macfuse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>macFUSE for Cryptomator</title>
       <link>https://blog.urz.one/cn/2023-06-22/macfuse-for-cryptomator/</link>
       <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2023-06-22/macfuse-for-cryptomator/</guid>
       <description>Cryptomator 解密早前加密的文件夹时，遇到如下错误： Error Code GH1B:GH1B:U0I5 org.cryptomator.integrations.mount.MountFailedException: Mounting failed at org.cryptomator.frontend.webdav@2.0.3/org.cryptomator.frontend.webdav.mount.MacAppleScriptMounter$MountBuilderImpl.mount(MacAppleScriptMounter.java:111) at org.cryptomator.frontend.webdav@2.0.3/org.cryptomator.frontend.webdav.mount.AbstractMountBuilder.mount(AbstractMountBuilder.java:88) at org.cryptomator.desktop@1.9.1/org.cryptomator.common.mount.Mounter.mount(Mounter.java:134) at org.cryptomator.desktop@1.9.1/org.cryptomator.common.vaults.Vault.unlock(Vault.java:150) at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.keyloading.KeyLoadingStrategy.use(KeyLoadingStrategy.java:79) at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.unlock.UnlockWorkflow.attemptUnlock(UnlockWorkflow.java:70) at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.unlock.UnlockWorkflow.call(UnlockWorkflow.java:60) at org.cryptomator.desktop@1.9.1/org.cryptomator.ui.unlock.UnlockWorkflow.call(UnlockWorkflow.java:31) at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Unknown Source) at java.base/java.util.concurrent.FutureTask.run(Unknown Source) at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) at java.base/java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.base/java.lang.Thread.run(Unknown Source) Caused by: java.io.IOException: Command failed with exit</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,33 +6,28 @@
     <description>Recent content in FFmpeg on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Tue, 06 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CUE 引导的音频分轨</title>
       <link>https://blog.urz.one/cn/2023-06-06/cue_flac/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2023-06-06/cue_flac/</guid>
       <description>CUE 文件编码 CUE 文件是一种用于描述数据结构和数据验证规则的配置文件格式，本质上依旧是一个文本文件，所以，有可能同样遇到编码问题。即，如果文件使用</description>
     </item>
-    
     <item>
       <title>ffmpeg 合并音视频</title>
       <link>https://blog.urz.one/cn/2020-08-12/combine-audio-and-video-with-ffmpeg/</link>
       <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2020-08-12/combine-audio-and-video-with-ffmpeg/</guid>
       <description>最近下载了一个适合网络传输的视频文件，却是没有声音的。 遂又单独下载音频文件，而后祭出音视频处理神器 ffmpeg 用 ffmpeg 合并 mp4 和 m4a 文件： ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4</description>
     </item>
-    
     <item>
       <title>组合拳之视频下载与处理</title>
       <link>https://blog.urz.one/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</guid>
       <description>youtube-dl 是谷歌 github 上的一个开源项目，它是一款轻量级的命令行 下载实用工具，可解析下载包括 youtube、youku、腾讯视频、爱奇艺等国内外上百个视频</description>
     </item>
-    
   </channel>
 </rss>

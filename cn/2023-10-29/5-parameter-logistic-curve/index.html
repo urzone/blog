@@ -136,41 +136,60 @@
 </ul>
 <p><strong>因此渐近线和拐点并不改变 S 曲线的形状</strong>。</p>
 <h3 id="s-曲线的不同表达式">S 曲线的不同表达式</h3>
-<h4 id="1-five-parameter-logistic-curve-from-graph-pad">1. Five-parameter logistic curve from Graph Pad</h4>
+<h4 id="1-five-parameter-logistic-curve">1. Five-parameter logistic curve</h4>
 <p>$$
-y\ =b\ +\ \frac{t-b}{1+\left(2^{\frac{1}{s}}-1\right)\cdot\left(\left(\frac{ES50}{x}\right)^{h}\right)^{s}}
+y\ =b\ +\ \frac{t-b}{\left(1+\left(2^{\frac{1}{s}}-1\right)\cdot\left(\frac{ES_{50}}{x}\right)^{h}\right)^{s}}
+$$</p>
+<p>$$
+y&rsquo;\ =\ -{ES_{50}}^{h}hs\left(2^{\frac{1}{s}}-1\right)\left(b-t\right)x^{-\left(h+1\right)}\left(\frac{{ES_{50}}^{h}\left(2^{\frac{1}{s}}-1\right)}{x^{h}}+1\right)^{-\left(s+1\right)}
 $$</p>
 <p>(1). 参数 t: 系统所能达到的最大效应值，与 y 的单位相同。</p>
 <p>(2). 参数 b: 系统所产生的最低效应值，与 y 的单位相同。</p>
-<p>(3). ES50: 刺激在达到其引发的效应从最小到最大的一半时的值，与 x 单位相同。</p>
+<p>(3). <code>$ES_{50}$</code>: 刺激在达到其引发的效应从最小到最大的一半时的值，与 x 单位相同。</p>
 <ul>
-<li>当我们谈论 ES50 时，我们通常说的是刺激在达到其引发的效应从最小到最大的一半时的值。然而，这个&quot;一半&quot;并不总是指最大效应的一半，即 50%。它依赖于系统具体的上限与下限，也就是说，ES50 所代表的&quot;一半效应&quot;对应于<strong>实际最大效应与最低效应的中间点的效应值</strong>。譬如，一个具体系统所能产生的最大效应为 40%，最低效应为 2%，此时的 EC50 对应的效应值其实是 21%。</li>
+<li>当我们谈论 <code>$ES_{50}$</code> 时，我们通常说的是刺激在达到其引发的效应从最小到最大的一半时的值。然而，这个&quot;一半&quot;并不总是指最大效应的一半，即 50%。它依赖于系统具体的上限与下限，也就是说，<code>$ES_{50}$</code> 所代表的&quot;一半效应&quot;对应于<strong>实际最大效应与最低效应的中间点的效应值</strong>。譬如，一个具体系统所能产生的最大效应为 40%，最低效应为 2%，此时的 <code>$ES_{50}$</code> 对应的效应值其实是 21%。</li>
 </ul>
 <p>(4). h: Hill&rsquo;s Slope 曲线的陡峭程度，无单位。</p>
 <ul>
-<li>在五参数 S  曲线中，Hill 斜率（h）是用来描述 ES50 点（或曲线中点）附近响应变化趋势的一个参数，也就是说，它描述了在 ES50 点附近，效应随刺激变化的速度。<strong>Hill 斜率并不是 ES50 点的实际斜率，而是描述了在这个点附近，曲线形状或效应变化的一个度量</strong>。</li>
-<li>进一步来说，曲线的 Hill 斜率反应了该系统对于外界刺激的敏感程度。如果 Hill 斜率较大（绝对值大），说明在 ES50 点附近反应变化速度快，曲线在这一区间陡峭；相反，如果 Hill 斜率小（绝对值小），说明在 EC50 点附近反应变化速度慢，曲线在这一区间较平缓。</li>
+<li>在五参数 S  曲线中，Hill 斜率（h）是用来描述 <code>$ES_{50}$</code> 点（或曲线中点）附近响应变化趋势的一个参数，也就是说，它描述了在 <code>$ES_{50}$</code> 点附近，效应随刺激变化的速度。<strong>Hill 斜率并不是 <code>$ES_{50}$</code> 点的实际斜率，而是描述了在这个点附近，曲线形状或效应变化的一个度量</strong>。</li>
+<li>进一步来说，曲线的 Hill 斜率反应了该系统对于外界刺激的敏感程度。如果 Hill 斜率较大（绝对值大），说明在 <code>$ES_{50}$</code> 点附近反应变化速度快，曲线在这一区间陡峭；相反，如果 Hill 斜率小（绝对值小），说明在 <code>$ES_{50}$</code> 点附近反应变化速度慢，曲线在这一区间较平缓。</li>
 </ul>
 <p>(5). s: symmetry parameter，对称因子，无单位，反映了 S 曲线的对称性。</p>
-<h4 id="2-four-parameter-logistic-curve-from-graph-pad">2. Four-parameter logistic curve from Graph Pad</h4>
+<h4 id="2-four-parameter-logistic-curve-from-usp">2. Four-parameter logistic curve from USP</h4>
 <p>即上述对称因子等于 1 时的情况：</p>
 <p>$$
-y\ =b\ +\ \frac{t-b}{1+\left(\frac{ES50}{x}\right)^{h}}
+y\ =b\ +\ \frac{t-b}{1+\left(\frac{ES_{50}}{x}\right)^{h}}
 $$</p>
-<h3 id="数学意义上的理解">数学意义上的理解：</h3>
+<p>$$
+y&rsquo;=-\frac{{ES_{50}}^{h}h\left(b-t\right)x^{-\left(h+1\right)}}{\left(\frac{{ES_{50}}^{h}}{x^{h}}+1\right)^{2}}
+$$</p>
+<p>$$
+y&rsquo;&rsquo;\ =\ \frac{\left({ES_{50}}^{h}ht-{ES_{50}}^{h}bh\right)\left(hx^{\left(h-1\right)}\left(x^{\left(2h+1\right)}+2{ES_{50}}^{h}x^{\left(h+1\right)}+{ES_{50}}^{\left(2h\right)}x\right)-x^{h}\left(\left(2h+1\right)x^{2h}+2{ES_{50}}^{h}\left(h+1\right)x^{h}+{ES_{50}}^{2h}\right)\right)}{\left(x^{\left(2h+1\right)}+2{ES_{50}}^{h}x^{\left(h+1\right)}+{ES_{50}}^{\left(2h\right)}x\right)^{2}}
+$$</p>
+<h4 id="数学意义上的理解">数学意义上的理解：</h4>
 <ul>
 <li>累积变化量对时间的一阶导数，就是累积变化量随时间的变化率，其物理意义就是速度；
 累积变化量对时间的二阶导数，就是累积变化量随时间变化率随时间的变化率，也就是速度随时间的变化率，其物理意义就是加速度。加速度是由作用在物体上的外力和物体的质量决定的。</li>
-<li>S 曲线的拐点处，曲线斜率达到最大值，一阶导数（速度，绿线）有极值。</li>
-<li>如果满足二阶可导条件，则该拐点二阶导数（加速度，黑线）为零。</li>
+<li>S 曲线的拐点处，曲线斜率达到最大值，一阶导数（速度）有极值。</li>
+<li>如果满足二阶可导条件，则该拐点二阶导数（加速度）为零。</li>
 </ul>
+<h4 id="3-four-parameter-logistic-curve-from-欧洲药典-pheurhttpswwwquanticscoukblogwhat-is-the-4pl-formula">3. <a href="https://www.quantics.co.uk/blog/what-is-the-4pl-formula/">Four-parameter logistic curve from 欧洲药典 (PhEur)</a></h4>
+<p>欧洲监管机构给出的公式明确将对数的底数 L 设置为 e (即它们总是使用自然对数)。该公式为:
+$$
+y=\delta+\frac{\alpha-\delta}{1+e^{-\beta(x-\gamma)}}
+$$
+这里有符号的明显变化。最显著的变化是使用 γ 表示 <code>$ln(ES_{50})$</code>，并定义 <code>$x = ln(z)$</code> 。庆幸的是，对于其他参数来说都是直接替换。假设 β 为正:<br>
+上渐近线: <code>$\alpha$</code><br>
+下渐近线: <code>$\delta$</code><br>
+斜率参数: <code>$-\beta$</code><br>
+<code>$ln(ES_{50})$</code>: <code>$\gamma$</code></p>
 
 
   <footer>
   
 <nav class="post-nav">
   <span class="nav-prev">&larr; <a href="/cn/2023-10-28/integral/">Integral Calculation</a></span>
-  <span class="nav-next"></span>
+  <span class="nav-next"><a href="/cn/2023-11-11/possibility/">可能性</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -181,6 +200,8 @@ document.addEventListener('keyup', function(e) {
     url = '\/cn\/2023-10-28\/integral\/';
     
   } else if (e.which == 39) {  
+    
+    url = '\/cn\/2023-11-11\/possibility\/';
     
   }
   if (url) window.location = url;

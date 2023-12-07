@@ -5,6 +5,7 @@
     <link>https://blog.urz.one/categories/</link>
     <description>Recent content in Categories on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cmn-Hans-CN</language><atom:link href="https://blog.urz.one/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>cmn-Hans-CN</language>
+    <atom:link href="https://blog.urz.one/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

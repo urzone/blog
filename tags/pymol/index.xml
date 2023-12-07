@@ -6,15 +6,14 @@
     <description>Recent content in pymol on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/pymol/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/pymol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyMOL 的安装、球棍模型设置与图片输出</title>
       <link>https://blog.urz.one/cn/2020-05-13/pymol-installing-setting/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2020-05-13/pymol-installing-setting/</guid>
       <description>安装 PyMol 使用 Homebrew 安装 PyMol 2.5 brew install pymol 在终端启动 PyMol pymol 为 PyMol 添加图形启动界面 * Step 1: Open the `Automator` app. Create a new document and select &amp;#34;Application&amp;#34;; * Step 2: Left under &amp;#34;Actions Library&amp;#34; select &amp;#34;Utilities&amp;#34; and &amp;#34;Run Shell Script&amp;#34;; * Step 3: Choose &amp;#34;/bin/bash&amp;#34; as a shell; * Step 4: Paste the</description>
     </item>
-    
   </channel>
 </rss>

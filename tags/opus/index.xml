@@ -6,15 +6,14 @@
     <description>Recent content in opus on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/opus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/opus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MusiX</title>
       <link>https://blog.urz.one/cn/2023-05-27/musix/</link>
       <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2023-05-27/musix/</guid>
       <description>音频文件 影响音频文件大小的因素包括： 声道：指音频信号传输过程中所采用的通路数目，常见的有单声道和立体声两种，也有更多声道的多声道音频。 采样率</description>
     </item>
-    
   </channel>
 </rss>

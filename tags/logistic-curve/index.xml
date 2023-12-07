@@ -6,15 +6,14 @@
     <description>Recent content in logistic curve on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/logistic-curve/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/logistic-curve/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>S 曲线</title>
       <link>https://blog.urz.one/cn/2023-10-29/5-parameter-logistic-curve/</link>
       <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2023-10-29/5-parameter-logistic-curve/</guid>
       <description>S 曲线 S 曲线因其函数图像形状像字母 S 得名。S 型函数是有界、可微的实函数，在实数范围内均有取值，且导数恒为非负，有且只有一个拐点。 所有连续非负</description>
     </item>
-    
   </channel>
 </rss>

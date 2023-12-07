@@ -6,15 +6,14 @@
     <description>Recent content in 301 on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/301/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/301/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloud Flare 重定向</title>
       <link>https://blog.urz.one/cn/2023-05-09/cloud-flare-forwarding-url/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2023-05-09/cloud-flare-forwarding-url/</guid>
       <description>网站域名发生变更后，搜索引擎所收录的旧地址，通通变成了 404. 这很影响网站访问者的心情啊。 域名托管 新域名托管到 Cloud Flare 后，即可通过配置规则对旧地址重定</description>
     </item>
-    
   </channel>
 </rss>

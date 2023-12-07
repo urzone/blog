@@ -6,15 +6,14 @@
     <description>Recent content in cowplot on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.urz.one/tags/cowplot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.urz.one/tags/cowplot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R 绘图排版</title>
       <link>https://blog.urz.one/cn/2022-07-20/r-drafting-and-layout/</link>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.urz.one/cn/2022-07-20/r-drafting-and-layout/</guid>
       <description>多图排版在视觉上产生的审美效果，并不亚于绘制单张图片的作用。用 R 绘制图片时，尤其如此。在曾经的一段时间里，自己发现，单张图片看起来还是不错的</description>
     </item>
-    
   </channel>
 </rss>
