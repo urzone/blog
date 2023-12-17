@@ -13,35 +13,28 @@
       <link>https://blog.urz.one/en/2022-06-24/ultrasound-physics/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/en/2022-06-24/ultrasound-physics/</guid>
-      <description>Pulse Echo Principles Pulse:
-A pulse is a group of ultrasound waves that travel together. Each ultrasound pulse has a beginning and an end and has certain characteristics. In pulsed ultrasound the same piezoelectric crystal is used to send the ultrasound pulse and receive the returning echoes. Components of a pulse:
-The transmit time which is also called the on time. During this time the ultrasound machine is on and short bursts of ultrasound pulses are produced and transmitted.</description>
+      <description>Pulse Echo Principles Pulse:&#xA;A pulse is a group of ultrasound waves that travel together. Each ultrasound pulse has a beginning and an end and has certain characteristics. In pulsed ultrasound the same piezoelectric crystal is used to send the ultrasound pulse and receive the returning echoes. Components of a pulse:&#xA;The transmit time which is also called the on time. During this time the ultrasound machine is on and short bursts of ultrasound pulses are produced and transmitted.</description>
     </item>
     <item>
       <title>Using ggplot2 to do an analysis of Nobel Prize Laureates</title>
       <link>https://blog.urz.one/en/2020-04-23/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/en/2020-04-23/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</guid>
-      <description>First, let us load all the libraries needed and set a tansparent theme which can be used for all the plots generated.
-library(tidyverse) library(lubridate) # to handal dates easily library(viridisLite) theme_xiao &amp;lt;- function () { theme_light(base_size=12, base_family=&amp;#34;Avenir Next&amp;#34;) %+replace% # Here you need to define the font you may use in your figure theme( # Background of the entire plot plot.background = element_rect(fill=&amp;#34;transparent&amp;#34;, colour = NA), # Background of plotting area panel.</description>
+      <description>First, let us load all the libraries needed and set a tansparent theme which can be used for all the plots generated.&#xA;library(tidyverse) library(lubridate) # to handal dates easily library(viridisLite) theme_xiao &amp;lt;- function () { theme_light(base_size=12, base_family=&amp;#34;Avenir Next&amp;#34;) %+replace% # Here you need to define the font you may use in your figure theme( # Background of the entire plot plot.background = element_rect(fill=&amp;#34;transparent&amp;#34;, colour = NA), # Background of plotting area panel.</description>
     </item>
     <item>
       <title>Formation of nanomicelles</title>
       <link>https://blog.urz.one/en/2016-03-06/micelle-formation/</link>
       <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/en/2016-03-06/micelle-formation/</guid>
-      <description>Coumarin 6 is a small molecular fluorescent dye, which has been frequently used for the traceability of excipients in vitro. And here, it was used as a hydrophobic model probe to explore the formation of micelles indirectly.
-Figure 1. The emission fluorescence intensity of coumarin 6 in water.
-Coumarin in water The emission fluorescent intensity of coumarin 6 in pure water, which was excited by the light with a maximum excitation wavelength at 441.</description>
+      <description>Coumarin 6 is a small molecular fluorescent dye, which has been frequently used for the traceability of excipients in vitro. And here, it was used as a hydrophobic model probe to explore the formation of micelles indirectly.&#xA;Figure 1. The emission fluorescence intensity of coumarin 6 in water.&#xA;Coumarin in water The emission fluorescent intensity of coumarin 6 in pure water, which was excited by the light with a maximum excitation wavelength at 441.</description>
     </item>
     <item>
       <title>Behaviour of Pyrene molecules in micellar systems</title>
       <link>https://blog.urz.one/en/2016-02-23/behaviour-of-pyrene-molecules-in-micellar-systems/</link>
       <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/en/2016-02-23/behaviour-of-pyrene-molecules-in-micellar-systems/</guid>
-      <description>Figure 1. Behaviour of pyrene molecules in micellar systems during dilution process.
-Recently I have done some experiments about critical micellar concentration (CMC). The CMC values of polymeric nano-micelles were determined by fluorescence spectroscopy, using pyrene as a polarity-sensitive fluorescent probe, of which the operations, data recording as well as the curve fitting are totally done according to the relevant literature reported previously.1
-Principle Pyrene, a hydrophobic fluorescent dye, could be used as a microenvironmental polarity-sensitive probe for the determination of CMC values.</description>
+      <description>Figure 1. Behaviour of pyrene molecules in micellar systems during dilution process.&#xA;Recently I have done some experiments about critical micellar concentration (CMC). The CMC values of polymeric nano-micelles were determined by fluorescence spectroscopy, using pyrene as a polarity-sensitive fluorescent probe, of which the operations, data recording as well as the curve fitting are totally done according to the relevant literature reported previously.1&#xA;Principle Pyrene, a hydrophobic fluorescent dye, could be used as a microenvironmental polarity-sensitive probe for the determination of CMC values.</description>
     </item>
     <item>
       <title>Boltzmann sigmoid and Pyrene fluorescence ratio</title>
@@ -69,13 +62,7 @@ Principle Pyrene, a hydrophobic fluorescent dye, could be used as a microenviron
       <link>https://blog.urz.one/en/2011-11-25/on-the-left--by-your-side/</link>
       <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/en/2011-11-25/on-the-left--by-your-side/</guid>
-      <description>U know, sometimes, the world sucks!
-Don&amp;rsquo;t waste time bothering each other.
-That&amp;rsquo;s the thing I got from u. Everything would be all right and ran as it should.
-Wish u got your dream.
-Farewell.
-On the left side of your desk.
-From:a little pink flower from one summer.</description>
+      <description>U know, sometimes, the world sucks!&#xA;Don&amp;rsquo;t waste time bothering each other.&#xA;That&amp;rsquo;s the thing I got from u. Everything would be all right and ran as it should.&#xA;Wish u got your dream.&#xA;Farewell.&#xA;On the left side of your desk.&#xA;From:a little pink flower from one summer.</description>
     </item>
   </channel>
 </rss>
