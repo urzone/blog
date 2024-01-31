@@ -9,6 +9,20 @@
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>七寸</title>
+      <link>https://blog.urz.one/cn/2024-01-31/the-throat-of-fate/</link>
+      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.urz.one/cn/2024-01-31/the-throat-of-fate/</guid>
+      <description>不知道是什么原因，愈发觉着自己的得失心重了。不知道这只是我觉得，还是真的就加重了，又或许是因为愈发体会到了生活的不易。有时候看来，一些东西就</description>
+    </item>
+    <item>
+      <title>轮回</title>
+      <link>https://blog.urz.one/cn/2024-01-25/12-years-for-a-cycle/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.urz.one/cn/2024-01-25/12-years-for-a-cycle/</guid>
+      <description>命运的轮回，巧合，或注定。 关键词一：右后方。我记得当时慕青所在的位置也是右后方。而发生在我身上的两次事件，同样发生在右后方：一次在高速上，另</description>
+    </item>
+    <item>
       <title>2023 年终总结</title>
       <link>https://blog.urz.one/cn/2023-12-31/annual-review/</link>
       <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
@@ -693,20 +707,6 @@
       <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/cn/2021-05-29/the-latex-commands-for-the-greek-alphabet-in-markdown/</guid>
       <description>用 Markdown 语法创建表格着实是一件令人头疼的事情，其不仅输入较麻烦，而且查看和修改数据也不够直观。Table Convert Online 是一款在线表格格式转换工具，该工具可</description>
-    </item>
-    <item>
-      <title>Tviewer 个人使用</title>
-      <link>https://blog.urz.one/cn/2021-05-28/tviewer/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.urz.one/cn/2021-05-28/tviewer/</guid>
-      <description>有时候，远程桌面控制能解决很多因距离产生的问题（这似乎是某种隐喻，如有雷同，可能也并不是巧合）。 安装 Tviewer 最新版； brew install --cask teamviewer 下载 python2 脚本文件 Tvie</description>
-    </item>
-    <item>
-      <title>纳米晶体技术</title>
-      <link>https://blog.urz.one/cn/2021-05-26/nanocrystal/</link>
-      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.urz.one/cn/2021-05-26/nanocrystal/</guid>
-      <description>近年来，新药研发不断应用组合化学、高通量筛选等技术成功开发了很多分子量较大、结构复杂的化合物。然而，这些化合物一般疏水性较强，约 $80\%$ 以上为水难</description>
     </item>
   </channel>
 </rss>
