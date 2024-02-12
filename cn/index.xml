@@ -6,8 +6,15 @@
     <description>Recent content in 日志 on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>盛夏的果实</title>
+      <link>https://blog.urz.one/cn/2024-02-07/fruits-of-summer/</link>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.urz.one/cn/2024-02-07/fruits-of-summer/</guid>
+      <description>「也許放棄，才能靠近你」。 这首歌总让我回忆起那个夕阳斜照的夏日。光线倾泻在白色的墙壁上，干净而明亮。石阶往上，是一间小屋子，靠墙壁依次放着几</description>
+    </item>
     <item>
       <title>七寸</title>
       <link>https://blog.urz.one/cn/2024-01-31/the-throat-of-fate/</link>
@@ -700,13 +707,6 @@
       <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/cn/2021-05-30/downloading-m3u8-files/</guid>
       <description>M3U8 文件是指 UTF-8 编码格式的 M3U 文件。M3U 文件是记录了一个索引的纯文本文件，打开它时播放软件并不是播放它，而是根据它的索引找到对应的音视频文件的网</description>
-    </item>
-    <item>
-      <title>MarkDown 表格与希腊字符的 LaTeX 命令</title>
-      <link>https://blog.urz.one/cn/2021-05-29/the-latex-commands-for-the-greek-alphabet-in-markdown/</link>
-      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.urz.one/cn/2021-05-29/the-latex-commands-for-the-greek-alphabet-in-markdown/</guid>
-      <description>用 Markdown 语法创建表格着实是一件令人头疼的事情，其不仅输入较麻烦，而且查看和修改数据也不够直观。Table Convert Online 是一款在线表格格式转换工具，该工具可</description>
     </item>
   </channel>
 </rss>
