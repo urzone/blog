@@ -6,8 +6,29 @@
     <description>Recent content in 日志 on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Wed, 07 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ffmpeg</title>
+      <link>https://blog.urz.one/cn/2024-03-11/ffmpeg/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.urz.one/cn/2024-03-11/ffmpeg/</guid>
+      <description>NIS Elements 渲染出的视频，无论在视频加载的时候还是在播放的时候，总感觉怪怪的。那种怪吧，有点说不清道不明，但就是觉得哪里不太对劲儿。譬如，在播放的时</description>
+    </item>
+    <item>
+      <title>Auto Insurance</title>
+      <link>https://blog.urz.one/cn/2024-02-27/auto-insurance/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.urz.one/cn/2024-02-27/auto-insurance/</guid>
+      <description>Liability insurance Bodily Injury (BI) Limit: $50k/$100k&#xA;If you are at fault in a covered accident and injure someone, this coverage pays up to a per person and per accident limit.&#xA;Property Damage: $10,000&#xA;If you are at fault in a covered accident, this pays for damage to property up to a specified limit.&#xA;Personal Injury Protection (pip): $250,000&#xA;Personal injury protection, also known as “no-fault insurance,” pays the medical bills and rehabilitative costs for you and your passengers after you’re injured in a car accident.</description>
+    </item>
+    <item>
+      <title>谈判</title>
+      <link>https://blog.urz.one/cn/2024-02-17/negotiations/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.urz.one/cn/2024-02-17/negotiations/</guid>
+      <description>谈判，谈的是人性，判的是如此。是的，人性如此。 故事的开始 爸说，今年是不是需要一点红色。可是，我又该如何告诉他，似乎事件已然发生了呢。而事件的</description>
+    </item>
     <item>
       <title>盛夏的果实</title>
       <link>https://blog.urz.one/cn/2024-02-07/fruits-of-summer/</link>
@@ -686,27 +707,6 @@
       <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://blog.urz.one/cn/2021-06-03/inflammation/</guid>
       <description>炎症反应 炎症反应是指具有血管系统的活体组织对致炎因子及局部损伤所发生的防御性为主的反应，中心环节是血管反应，是生物组织受到外伤、出血或病原感</description>
-    </item>
-    <item>
-      <title>批量提取 PowerPoint 中的原始媒体文件</title>
-      <link>https://blog.urz.one/cn/2021-06-02/extract-media-files-from-ppt/</link>
-      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.urz.one/cn/2021-06-02/extract-media-files-from-ppt/</guid>
-      <description>因为协作关系，有时候需要把一些媒体文件从 PowerPoint 演示文稿中提取出来，例如视频、照片或声音文件。通常的方法可能是直接拖拽或选择另存为。譬如，选中需要</description>
-    </item>
-    <item>
-      <title>Windows To Go</title>
-      <link>https://blog.urz.one/cn/2021-05-31/windows-to-go/</link>
-      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.urz.one/cn/2021-05-31/windows-to-go/</guid>
-      <description>WTG 安装 软件准备 WTG 镜像写入工具 WTG 辅助工具，用于将 Windows 镜像写入到 U 盘、移动硬盘等便携设备上，并且写入移动设备上的 Windows 系统能随处在不同的电脑硬件上直接</description>
-    </item>
-    <item>
-      <title>M3U8 文件下载</title>
-      <link>https://blog.urz.one/cn/2021-05-30/downloading-m3u8-files/</link>
-      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.urz.one/cn/2021-05-30/downloading-m3u8-files/</guid>
-      <description>M3U8 文件是指 UTF-8 编码格式的 M3U 文件。M3U 文件是记录了一个索引的纯文本文件，打开它时播放软件并不是播放它，而是根据它的索引找到对应的音视频文件的网</description>
     </item>
   </channel>
 </rss>

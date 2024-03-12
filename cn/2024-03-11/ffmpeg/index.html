@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>ffmpeg - XiaO | 缄默之语</title>
+    <meta property="og:title" content="ffmpeg - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="NIS Elements 渲染出的视频，无论在视频加载的时候还是在播放的时候，总感觉怪怪的。那种怪吧，有点说不清道不明，但就是觉得哪里不太对劲儿。譬如，在播放的时候，明明看到进度条已经跑完了，然而视频并没有播放结束。如果通过一些 GUI 转码软件尝试转码，得到的时长远远小于真实的时长。
+[&amp;hellip;] brew install mediainfo mediainfo &amp;hellip;">
+      <meta property="og:description" content="NIS Elements 渲染出的视频，无论在视频加载的时候还是在播放的时候，总感觉怪怪的。那种怪吧，有点说不清道不明，但就是觉得哪里不太对劲儿。譬如，在播放的时候，明明看到进度条已经跑完了，然而视频并没有播放结束。如果通过一些 GUI 转码软件尝试转码，得到的时长远远小于真实的时长。
+[&amp;hellip;] brew install mediainfo mediainfo &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://blog.urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>ffmpeg</h1>
+
+
+<h3>XiaO / 
+2024-03-11</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>NIS Elements 渲染出的视频，无论在视频加载的时候还是在播放的时候，总感觉怪怪的。那种怪吧，有点说不清道不明，但就是觉得哪里不太对劲儿。譬如，在播放的时候，明明看到进度条已经跑完了，然而视频并没有播放结束。如果通过一些 GUI 转码软件尝试转码，得到的时长远远小于真实的时长。</p>
+<h3 id="mediainfohttpsmediaareanetenmediainfo-查看音视频文件最为相关的技术参数和标签数据"><a href="https://mediaarea.net/en/MediaInfo">mediainfo</a> 查看音视频文件最为相关的技术参数和标签数据</h3>
+<pre tabindex="0"><code>brew install mediainfo
+
+mediainfo path/to/inputfile
+
+
+# 结果
+
+Format                                   : MPEG-4
+Format profile                           : Base Media
+Codec ID                                 : isom (isom/iso2/avc1/mp41)
+File size                                : 132 MiB
+Duration                                 : 1 s 998 ms
+Overall bit rate                         : 553 Mb/s
+Frame rate                               : 60.241 FPS
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L5
+Format settings                          : CABAC / 3 Ref Frames
+Format settings, CABAC                   : Yes
+Format settings, Reference frames        : 3 frames
+Format settings, Slice count             : 4 slices per frame
+Codec ID                                 : avc1
+Codec ID/Info                            : Advanced Video Coding
+Duration                                 : 1 s 998 ms
+Source duration                          : 19 s 920 ms
+Bit rate                                 : 53.1 Mb/s
+Width                                    : 3 090 pixels
+Height                                   : 1 146 pixels
+Display aspect ratio                     : 2.696
+Frame rate mode                          : Constant
+Frame rate                               : 60.241 FPS
+Original frame rate                      : 30.000 FPS
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.249
+Stream size                              : 12.6 MiB (10%)
+Source stream size                       : 132 MiB (100%)
+mdhd_Duration                            : 1998
+Codec configuration box                  : avcC
+</code></pre><p>细看时长，便会发现，<code>Duration : 1 s 998 ms</code> 和 <code>Source duration : 19 s 920 ms</code> 显示的时长根本不一样。这种情况通常发生在编辑/转码过程中从较长的视频源中提取短片段时。编码器会保留原始源的持续时间元数据，但会输出一个新的指定持续时间的缩短视频文件。这就导致了加载和播放的时候，给人一种很怪异的感觉。</p>
+<h3 id="ffmpeghttpsffmpegorg-全能的音视频转码工具"><a href="https://ffmpeg.org">ffmpeg</a> 全能的音视频转码工具</h3>
+<h4 id="提取源文件">提取源文件</h4>
+<p>将所有需要处理的视频放入同一个文件夹<code>source</code>中，从封装的视频文件中提取处源文件并存储到 <code>source extracted</code> 文件夹中。</p>
+<pre tabindex="0"><code>for f in &#34;/Users/urzone/Movies/source/&#34;*.mp4; do ffmpeg -i &#34;$f&#34; -c:v copy -map 0:v:0 &#34;/Users/urzone/Movies/source extracted/${f##*/}&#34;; done
+
+
+# `for f in &#34;/Users/urzone/Movies/source/&#34;*.mp4` loops through all files with the `.mp4` extension in the directory `/Users/urzone/Movies/source/`.
+# `-c:v copy` instructs ffmpeg to copy the video stream from the input video without re-encoding.
+# `${f##*/}` extracts the filename (with extension)
+</code></pre><h4 id="添加音频">添加音频</h4>
+<p>为 <code>source extracted</code> 文件夹中的所有视频，添加音频并存储到一个新的文件夹 <code>source audio</code>。</p>
+<pre tabindex="0"><code>for f in &#34;/Users/urzone/Movies/source extracted/&#34;*.mp4; do ffmpeg -i &#34;$f&#34; -i &#34;/Users/urzone/Movies/audio.m4a&#34; -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest &#34;/Users/urzone/Movies/source audio/${f##*/}&#34;; done
+</code></pre><h4 id="视频压缩">视频压缩</h4>
+<p>将 <code>source audio</code> 文件夹中的所有视频，重新编码压缩并存储到一个新的文件夹 <code>source compressed</code>。</p>
+<pre tabindex="0"><code>for f in &#34;/Users/urzone/Movies/source audio/&#34;*.mp4; do ffmpeg  -i &#34;$f&#34; -c:v libx264 -crf 22 -preset slow -c:a copy &#34;/Users/urzone/Movies/source compressed/${f##*/}&#34;; done
+
+
+# The CRF scale ranges from 0 to 51, where 0 is lossless and higher values indicate lower quality.
+# CRF values below 17/18 in x264 (FFmpeg) are visually lossless, with no significant visual benefit compared to CRF 17/18.
+# Lower CRF values (0-16) are good for preserving detail and texture in videos, while higher values compress noise but may lead to a loss of detail.
+</code></pre><h3 id="添加-logo">添加 logo</h3>
+<pre tabindex="0"><code>for f in &#34;/Users/urzone/Movies/source compressed/&#34;*.mp4; do ffmpeg -i &#34;$f&#34; -i /Users/urzone/Movies/U-M_Logo-Hex.png -i /Users/urzone/Movies/sig1.png -filter_complex &#34;[1:v]scale=150:-1 [scaled_overlay1]; [2:v]scale=300:-1 [scaled_overlay2]; [0:v][scaled_overlay1]overlay=10:10[overlay1]; [overlay1][scaled_overlay2]overlay=W-w-10:H-h-10&#34; -c:a copy -movflags +faststart &#34;/Users/urzone/Movies/source logo/${f##*/}&#34;; done
+
+# /Users/urzone/Movies/U-M_Logo-Hex.png 设置 logo1，
+# [1:v]scale=150:-1 设置 logo1 横向分辨率
+# /Users/urzone/Movies/sig1.png 设置 logo2
+# [2:v]scale=300:-1 设置 logo2 横向分辨率
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2024-02-27/auto-insurance/">Auto Insurance</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2024-02-27\/auto-insurance\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2024</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
